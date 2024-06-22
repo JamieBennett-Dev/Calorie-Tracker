@@ -97,6 +97,8 @@ CSRF_TRUSTED_ORIGINS = [
     "https://*.herokuapp.com"
 ]
 
+AUTH_USER_MODEL = 'foodtracker.User' #added
+
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
@@ -133,6 +135,15 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = 'static/'
+
+# Location where Django collects all static files #added
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') #added
+
+# Location where we will store our static files #added
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')] #added
+
+MEDIA_URL = '/media/' #added
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media') #added
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
