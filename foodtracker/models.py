@@ -1,9 +1,24 @@
-from django.contrib.auth.models import AbstractUser
+from django.contrib.auth.models import AbstractUser, Group, Permission
 from django.db import models
 
 # Create your models here.
 
 class User(AbstractUser):
+    groups = models.ManyToManyField(
+        Group,
+        related_name='foodtracker_user_groups',  # Unique related_name
+        blank=True,
+        help_text=('The groups this user belongs to. A user will get all permissions granted to each of their groups.'),
+        related_query_name='user',
+    )
+    user_permissions = models.ManyToManyField(
+        Permission,
+        related_name='foodtracker_user_permissions',  # Unique related_name
+        blank=True,
+        help_text=('Specific permissions for this user.'),
+        related_query_name='user',
+    )
+
     def __str__(self):
         return f'{self.username}'
 
@@ -21,7 +36,6 @@ class FoodCategory(models.Model):
     def count_food_by_category(self):
         return Food.objects.filter(category=self).count()
 
-
 class Food(models.Model):
     food_name = models.CharField(max_length=200)
     quantity = models.DecimalField(max_digits=7, decimal_places=2, default=100.00)
@@ -34,14 +48,12 @@ class Food(models.Model):
     def __str__(self):
         return f'{self.food_name} - category: {self.category}'
 
-
 class Image(models.Model):
     food = models.ForeignKey(Food, on_delete=models.CASCADE, related_name='get_images')
     image = models.ImageField(upload_to='images/')
 
     def __str__(self):
         return f'{self.image}'
-
 
 class FoodLog(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
@@ -53,7 +65,6 @@ class FoodLog(models.Model):
 
     def __str__(self):
         return f'{self.user.username} - {self.food_consumed.food_name}'
-
 
 class Weight(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
