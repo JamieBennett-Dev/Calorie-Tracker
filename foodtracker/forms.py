@@ -16,3 +16,14 @@ class FoodForm(forms.ModelForm):
         for visible in self.visible_fields():
             visible.field.widget.attrs['class'] = 'form-control'
 
+class ImageForm(forms.ModelForm):
+    """
+    A ModelForm class for adding an image to the food item
+    """
+    class Meta:
+        model = Image
+        fiels = ['image']
+
+    def __init__(self, *args, **kwargs):
+        super(ImageForm, self).__init__(*args, **kwargs)
+        self.visible_fields()[0].field.widget.attrs['class'] = 'form-control'
