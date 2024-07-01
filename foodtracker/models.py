@@ -3,7 +3,7 @@ from django.db import models
 
 class User(AbstractUser):
     def __str__(self):
-        return f'{self.username}'
+        return f'{self.username}' # Returns the user their username
 
 class FoodCategory(models.Model):
     category_name = models.CharField(max_length=50)
