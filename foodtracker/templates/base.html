@@ -22,7 +22,7 @@
         <div class="container-fluid">
             <!-- Navbar Brand -->
             <a class="navbar-brand fs-1" href="{% url 'index' %}">
-                <i class="fas fa-pepper-hot pe-1"></i> Calorie Tracker
+                <i class="fas fa-pepper-hot pe-1 fa-lg"></i> Calorie Tracker
             </a>
             <!-- Navbar toggler for smaller screens -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor" aria-controls="navbarColor" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,12 +33,12 @@
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
                         <a class="nav-link fs-5" href="{% url 'index' %}">
-                            <i class="fas fa-list pe-1"></i> Food List
+                            <i class="fas fa-list pe-1 fa-lg"></i> Food List
                         </a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle fs-5" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                            <i class="fas fa-pizza-slice pe-1"></i> Food Categories
+                            <i class="fas fa-pizza-slice pe-1 fa-lg"></i> Food Categories
                         </a>
                         <div class="dropdown-menu">
                             {% for category in categories %}
@@ -54,12 +54,12 @@
                     {% if user.is_authenticated %}
                         <li class="nav-item">
                             <a class="nav-link fs-5" href="{% url 'food_add' %}">
-                                <i class="far fa-plus-square pe-1"></i> Add Food Item
+                                <i class="far fa-plus-square pe-1 fa-lg"></i> Add Item
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link fs-5" href="{% url 'food_log' %}">
-                                <i class="fas fa-utensils pe-1"></i> Food Log
+                                <i class="fas fa-utensils pe-1 fa-lg"></i> Food Log
                             </a>
                         </li>
                     {% endif %}
@@ -68,27 +68,27 @@
                     {% if user.is_authenticated %}
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
-                            <i class="fas fa-user fa-fw fa-lg"></i>
+                            <i class="fas fa-user fa-fw fa-lg pe-1"></i>
                         </a>
                         <div class="dropdown-menu dropdown-menu-end">
                             <a class="dropdown-item" href="{% url 'weight_log' %}">
-                                <i class="fas fa-user pe-1"></i> User Profile
+                                <i class="fas fa-user pe-1 fa-lg"></i> User Profile
                             </a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="{% url 'logout' %}">
-                                <i class="fas fa-sign-out-alt pe-1"></i> Log Out
+                                <i class="fas fa-sign-out-alt pe-1 fa-lg"></i> Log Out
                             </a>
                         </div>
                     </li>
                     {% else %}
                     <li class="nav-item fs-5">
                         <a class="nav-link" href="{% url 'login' %}">
-                            <i class="fas fa-sign-in-alt pe-1"></i> Log In
+                            <i class="fas fa-sign-in-alt pe-1 fa-lg"></i> Log In
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link fs-5" href="{% url 'register' %}">
-                            <i class="fas fa-user-plus pe-1"></i> Register
+                            <i class="fas fa-user-plus pe-1 fa-lg"></i> Register
                         </a>
                     </li>
                     {% endif %}
