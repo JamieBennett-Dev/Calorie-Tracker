@@ -20,31 +20,31 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
+            <!-- Navbar Brand -->
             <a class="navbar-brand fs-1" href="{% url 'index' %}">
-                <i class="fas fa-pepper-hot fa-xl pe-2"></i> Calorie Tracker
+                <i class="fas fa-pepper-hot pe-1"></i> Calorie Tracker
             </a>
             <!-- Navbar toggler for smaller screens -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor" aria-controls="navbarColor" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
-            <div class='collapse navbar-collapse' id='navbarColor'>
-                <ul class='navbar-nav me-auto'>
-                    <li class='nav-item'>
-                        <a class='nav-link' href="{% url 'index' %}">
-                            <i class='fas fa-list'></i> Food List
+            <!-- Navbar Items -->
+            <div class="collapse navbar-collapse" id="navbarColor">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link fs-5" href="{% url 'index' %}">
+                            <i class="fas fa-list pe-1"></i> Food List
                         </a>
                     </li>
-
-                    <li class='nav-item dropdown'>
-                        <a class='nav-link dropdown-toggle' data-bs-toggle='dropdown' href='#' role='button' aria-haspopup='true' aria-expanded='false'>
-                            <i class='fas fa-pizza-slice'></i> Food Categories
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle fs-5" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-pizza-slice pe-1"></i> Food Categories
                         </a>
-                        <div class='dropdown-menu'>
+                        <div class="dropdown-menu">
                             {% for category in categories %}
-                            <a class='dropdown-item' href="{% url 'category_details_view' category.category_name %}">
+                            <a class="dropdown-item" href="{% url 'category_details_view' category.category_name %}">
                                 {{ category }} &nbsp;
-                                <span class='badge bg-primary'>
+                                <span class="badge bg-primary">
                                     {{ category.count_food_by_category }}
                                 </span>
                             </a>
@@ -52,44 +52,43 @@
                         </div>
                     </li>
                     {% if user.is_authenticated %}
-                        <li class='nav-item'>
-                            <a class='nav-link' href="{% url 'food_add' %}">
-                                <i class='far fa-plus-square'></i> Add Food Item
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" href="{% url 'food_add' %}">
+                                <i class="far fa-plus-square pe-1"></i> Add Food Item
                             </a>
                         </li>
-                        <li class='nav-item'>
-                            <a class='nav-link' href="{% url 'food_log' %}">
-                                <i class='fas fa-utensils'></i> Food Log
+                        <li class="nav-item">
+                            <a class="nav-link fs-5" href="{% url 'food_log' %}">
+                                <i class="fas fa-utensils pe-1"></i> Food Log
                             </a>
                         </li>
                     {% endif %}
                 </ul>
-
-                <ul class='navbar-nav ms-auto'>
+                <ul class="navbar-nav ms-auto">
                     {% if user.is_authenticated %}
-                    <li class='nav-item dropdown'>
-                        <a class='nav-link dropdown-toggle' data-bs-toggle='dropdown' href='#' role='button' aria-haspopup='true' aria-expanded='false'>
-                            <i class='fas fa-user fa-fw fa-lg'></i>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-user fa-fw fa-lg"></i>
                         </a>
-                        <div class='dropdown-menu dropdown-menu-end'>
-                            <a class='dropdown-item' href="{% url 'weight_log' %}">
-                                <i class='fas fa-user'></i> User Profile
+                        <div class="dropdown-menu dropdown-menu-end">
+                            <a class="dropdown-item" href="{% url 'weight_log' %}">
+                                <i class="fas fa-user pe-1"></i> User Profile
                             </a>
-                            <div class='dropdown-divider'></div>
-                            <a class='dropdown-item' href="{% url 'logout' %}">
-                                <i class='fas fa-sign-out-alt'></i> Log Out
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="{% url 'logout' %}">
+                                <i class="fas fa-sign-out-alt pe-1"></i> Log Out
                             </a>
                         </div>
                     </li>
                     {% else %}
-                    <li class='nav-item'>
-                        <a class='nav-link' href="{% url 'login' %}">
-                            <i class='fas fa-sign-in-alt'></i> Log In
+                    <li class="nav-item fs-5">
+                        <a class="nav-link" href="{% url 'login' %}">
+                            <i class="fas fa-sign-in-alt pe-1"></i> Log In
                         </a>
                     </li>
-                    <li class='nav-item'>
-                        <a class='nav-link' href="{% url 'register' %}">
-                            <i class='fas fa-user-plus'></i> Register
+                    <li class="nav-item">
+                        <a class="nav-link fs-5" href="{% url 'register' %}">
+                            <i class="fas fa-user-plus pe-1"></i> Register
                         </a>
                     </li>
                     {% endif %}
@@ -100,7 +99,7 @@
 
     <!-- Main Content -->
     <main>
-        <div class='container'>
+        <div class="container">
             {% block body %}
             {% endblock %}
         </div>
@@ -108,8 +107,8 @@
 
     <!-- Footer -->
     <footer>
-        <div class='d-flex align-items-center justify-content-center'>
-            <div class='text-center'>
+        <div class="d-flex align-items-center justify-content-center">
+            <div class="text-center">
                 Copyright &copy; <script>document.write(new Date().getFullYear())</script> JamieBennett-Dev.
             </div>
         </div>
