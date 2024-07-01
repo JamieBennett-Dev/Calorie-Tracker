@@ -10,7 +10,7 @@ from django.urls import reverse
 from .models import User, Food, FoodCategory, FoodLog, Image, Weight
 from .forms import FoodForm, ImageForm
 
-# Create your views here.
+
 def index(request):
     '''
     The default route which lists all food items
