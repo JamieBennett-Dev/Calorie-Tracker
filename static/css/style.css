@@ -70,7 +70,7 @@ footer {
     background-color: #FFADD1;
 }
 
-/* ----------Main Content Styles---------- */
+/* ----------Main Content, base.html and index.html Styles---------- */
 #page-h1 {
     font-family: "Lilita One", sans-serif;
     color: #0056E0;
@@ -127,6 +127,7 @@ footer {
     font-family: "Lilita One", sans-serif;
 }
 
+/* ----------login.html Styles---------- */
 #login-label {
     font-family: "Sarabun", sans-serif;
     font-weight: bold;
@@ -162,4 +163,28 @@ footer {
 
 #login-register-here:hover {
     color: #E00061;
+}
+
+/* ----------register.html Styles---------- */
+#register-card-body {
+    background-color: rgba(0, 86, 224, 0.2);
+    border: 2px solid #0056E0;
+    border-radius: 5px;
+}
+
+#register-label {
+    font-family: "Sarabun", sans-serif;
+    font-weight: bold;
+}
+
+#register-register-btn {
+    font-family: "Lilita One", sans-serif;
+    background-color: #0056E0;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+#register-register-btn:hover {
+    background-color: #E00061;
+    transform: scale(1.05);
 }
