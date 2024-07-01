@@ -122,3 +122,8 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+#page-toggle {
+    font-family: "Lilita One", sans-serif;
+}
+
