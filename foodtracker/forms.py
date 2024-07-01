@@ -1,12 +1,10 @@
 from django import forms
 from .models import Food, Image
 
-# Create Form Models
-
 class FoodForm(forms.ModelForm):
-    """
+    '''
     A ModelForm class for adding a new food item
-    """
+    '''
     class Meta:
         model = Food
         fields = ['food_name', 'quantity', 'calories', 'fat', 'carbohydrates', 'protein', 'category']
@@ -16,10 +14,11 @@ class FoodForm(forms.ModelForm):
         for visible in self.visible_fields():
             visible.field.widget.attrs['class'] = 'form-control'
 
+
 class ImageForm(forms.ModelForm):
-    """
+    '''
     A ModelForm class for adding an image to the food item
-    """
+    '''
     class Meta:
         model = Image
         fields = ['image']
