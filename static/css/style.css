@@ -81,19 +81,19 @@ footer {
     text-shadow: -0.5px -0.5px 0 #00173D, 0.5px -0.5px 0 #00173D, -0.5px 0.5px 0 #00173D, 0.5px 0.5px 0 #00173D;
 }
 
-.card-body {
+#index-card-body {
     background-color: rgba(0, 86, 224, 0.2);
     transition: all 0.2s ease;
     border: 2px solid #0056E0;
     border-radius: 5px;
 }
 
-.card-body:hover {
+#index-card-body:hover {
     background-color: rgba(255,173,209, 0.3);
     border: 2px solid #E00061;
 }
 
-.card-body:hover #view-details {
+#index-card-body:hover #view-details {
     color: #0056E0;
 }
 
@@ -127,3 +127,39 @@ footer {
     font-family: "Lilita One", sans-serif;
 }
 
+#login-label {
+    font-family: "Sarabun", sans-serif;
+    font-weight: bold;
+}
+
+#login-card-body {
+    background-color: rgba(0, 86, 224, 0.2);
+    border: 2px solid #0056E0;
+    border-radius: 5px;
+}
+
+#login-login-btn {
+    font-family: "Lilita One", sans-serif;
+    background-color: #0056E0;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+#login-login-btn:hover {
+    background-color: #E00061;
+    transform: scale(1.05);
+}
+
+#account-question {
+    font-family: "Sarabun", sans-serif;
+}
+
+#login-register-here {
+    font-weight: bold;
+    color: #0056E0;
+    transition: all 0.2s ease;
+}
+
+#login-register-here:hover {
+    color: #E00061;
+}
