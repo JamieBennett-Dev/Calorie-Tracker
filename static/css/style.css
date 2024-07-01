@@ -13,7 +13,7 @@
 #FFADD1 - Light Raspberry
 
 #FF0000 - Red
-#00E056 - Green
+#00CC4E - Green
 
 #141414 - Off Black
 #F5F5F5 - Off White
@@ -147,7 +147,7 @@ footer {
 }
 
 #login-login-btn:hover {
-    background-color: #E00061;
+    background-color: #00CC4E;
     transform: scale(1.05);
 }
 
@@ -185,6 +185,44 @@ footer {
 }
 
 #register-register-btn:hover {
-    background-color: #E00061;
+    background-color: #00CC4E;
     transform: scale(1.05);
+}
+
+/* ----------food_add.html Styles---------- */
+#food_add-h5 {
+    font-family: "Lilita One", sans-serif;
+}
+
+#food_add-card-body {
+    background-color: rgba(0, 86, 224, 0.2);
+    border: 2px solid #0056E0;
+    border-radius: 5px;
+    font-family: "Sarabun", sans-serif;
+    font-weight: bold;
+}
+
+#save {
+    font-family: "Lilita One";
+    font-weight: normal;
+    transition: all 0.2s ease;
+    border: none;
+}
+
+#save:hover {
+    background-color: #00CC4E;
+    transform: scale(1.05);
+}
+
+#cancel {
+    font-family: "Lilita One", sans-serif;
+    color: #FF0000;
+    border: 1px solid #FF0000;
+    transition: all 0.2s ease;
+}
+
+#cancel:hover {
+    background-color: #FF0000;
+    transform: scale(1.05);
+    color: #FFF;
 }
