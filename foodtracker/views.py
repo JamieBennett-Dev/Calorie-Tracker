@@ -126,20 +126,19 @@ def food_add_view(request):
     '''
     It allows the user to add a new food item
     '''
-    ImageFormSet = forms.modelformset_factory(Image, form=ImageForm, extra=2)
+    ImageFormSet = forms.modelformset_factory(Image, form=ImageForm, extra=1)  # Change extra to 1
 
     if request.method == 'POST':
         food_form = FoodForm(request.POST, request.FILES)
-        image_form = ImageFormSet(request.POST, request.FILES, queryset=Image.objects.none())
+        image_formset = ImageFormSet(request.POST, request.FILES, queryset=Image.objects.none())
 
-        if food_form.is_valid() and image_form.is_valid():
+        if food_form.is_valid() and image_formset.is_valid():
             new_food = food_form.save(commit=False)
             new_food.save()
 
-            for food_form in image_form.cleaned_data:
-                if food_form:
-                    image = food_form['image']
-
+            for image_form in image_formset.cleaned_data:
+                if image_form:
+                    image = image_form['image']
                     new_image = Image(food=new_food, image=image)
                     new_image.save()
 
@@ -153,8 +152,8 @@ def food_add_view(request):
         else:
             return render(request, 'food_add.html', {
                 'categories': FoodCategory.objects.all(),
-                'food_form': FoodForm(),
-                'image_form': ImageFormSet(queryset=Image.objects.none()),
+                'food_form': food_form,
+                'image_form': image_formset,
             })
 
     else:
@@ -163,6 +162,7 @@ def food_add_view(request):
             'food_form': FoodForm(),
             'image_form': ImageFormSet(queryset=Image.objects.none()),
         })
+
 
 
 @login_required
