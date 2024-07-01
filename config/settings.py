@@ -44,6 +44,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
+    # local
     'foodtracker',
 ]
 
@@ -97,7 +99,7 @@ CSRF_TRUSTED_ORIGINS = [
     "https://*.herokuapp.com"
 ]
 
-AUTH_USER_MODEL = 'foodtracker.User' #added
+AUTH_USER_MODEL = 'foodtracker.User'
 
 
 # Password validation
@@ -136,14 +138,14 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-# Location where Django collects all static files #added
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') #added
+# Location where Django collects all static files 
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
-# Location where we will store our static files #added
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')] #added
+# Location where we will store our static files 
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')] 
 
-MEDIA_URL = '/media/' #added
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media') #added
+MEDIA_URL = '/media/' 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media') 
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
