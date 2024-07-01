@@ -118,4 +118,7 @@ footer {
 
 #food-list-image:hover {
     transform: scale(1.05);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
