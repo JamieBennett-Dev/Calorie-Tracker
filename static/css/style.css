@@ -74,6 +74,7 @@ footer {
 #page-h1 {
     font-family: "Lilita One", sans-serif;
     color: #0056E0;
+    text-shadow: -0.5px -0.5px 0 #00173D, 0.5px -0.5px 0 #00173D, -0.5px 0.5px 0 #00173D, 0.5px 0.5px 0 #00173D;
 }
 
 #page-h1 i {
@@ -216,11 +217,25 @@ footer {
 #cancel {
     font-family: "Lilita One", sans-serif;
     color: #FF0000;
-    border: 1px solid #FF0000;
+    border: 2px solid #FF0000;
     transition: all 0.2s ease;
 }
 
 #cancel:hover {
+    background-color: #FF0000;
+    transform: scale(1.05);
+    color: #FFF;
+}
+
+/* ----------food_.html Styles---------- */
+#go-back-btn {
+    font-family: "Lilita One", sans-serif;
+    color: #FF0000;
+    border: 2px solid #FF0000;
+    transition: all 0.2s ease;
+}
+
+#go-back-btn:hover {
     background-color: #FF0000;
     transform: scale(1.05);
     color: #FFF;
