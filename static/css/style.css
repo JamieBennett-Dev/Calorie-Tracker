@@ -4,17 +4,16 @@
 
 /* ----------Colour Pallet---------- */
 /*
-#66BB6A - Green
-#1A381B - Dark Green
-#B9DFBA - Light Green
+#0056E0 - Blue
+#00173D - Dark Blue
+#ADCDFF - Light Blue
 
-#FF7043 - Orange
-#521300 - Dark Orange
-#FFD0C2 - Light Orange
+#E00061 - Raspberry
+#3D001B - Dark Raspberry
+#FFADD1 - Light Raspberry
 
-#FFD54F - Yellow
-#523F00 - Dark Yellow
-#FFF1C2 - Light Yellow
+#FF0000 - Red
+#00E056 - Green
 
 #141414 - Off Black
 #F5F5F5 - Off White
@@ -70,3 +69,5 @@ footer {
 ::-webkit-scrollbar-thumb:hover {
     background-color: #B9DFBA;
 }
+
+/* ----------Main Content Styles---------- */
