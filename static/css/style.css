@@ -240,3 +240,35 @@ footer {
     transform: scale(1.05);
     color: #FFF;
 }
+
+/* ----------Next Page Styles---------- */
+.page-item {
+    margin: 0 5px;
+}
+
+.page-item .page-link {
+    color: #E00061;
+    background-color: #FFF;
+    border: 2px solid #E00061;
+    padding: 0.5rem 1.25rem;
+    transition: all 0.2s ease;
+}
+
+.page-item .page-link:hover {
+    transform: scale(1.05);
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #FFF;
+    background-color: #E00061;
+    border: 2px solid #E00061;
+}
+
+.page-item.disabled .page-link {
+    color: #707070;
+    pointer-events: none;
+    cursor: not-allowed;
+    background-color: #D3D3D3;
+    border-color: #D3D3D3;
+}
