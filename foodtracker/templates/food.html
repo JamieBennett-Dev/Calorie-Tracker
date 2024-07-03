@@ -9,17 +9,16 @@
     <div class="container-fluid px-4">
 
         <h1 class="mt-4 d-flex justify-content-center" id="page-h1"><i class="fa-solid fa-utensils pe-2"></i>{{ food.food_name }}</h1>
-        <h5 id="food_add-h5" class="d-flex justify-content-center">Category: {{ food.category }}</h5>
+        <h5 id="food_add-h5" class="d-flex justify-content-center mb-4">Category: {{ food.category }}</h5>
 
         <div class='row justify-content-center'>
-            <div class="col-12 col-lg-6">
-                <!-- {% for image in images %}
-                 Food image 
-                <a href="#" class="d-flex justify-content-center">
-                    <img src="{{ image.image.url|default:'../../static/images/no_image.png' }}" class="img-fluid"
+            <div class="col-12 col-lg-6 d-flex justify-content-center align-items-center">
+                {% for image in images %}
+                <!-- <a href="#" class="d-flex justify-content-center"> -->
+                    <img src="{{ image.image.url|default:'../../static/images/no_image.png' }}" class="img-fluid d-flex justify-content-center"
                         alt="food image" id="food-html-img">
-                </a>
-                {% endfor %} -->
+                <!-- </a> -->
+                {% endfor %}
             </div>
             <div class="col-12 col-lg-6">
                 <div class="card my-4" id="calories-per-100g-chart">

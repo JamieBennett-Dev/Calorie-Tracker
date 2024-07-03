@@ -243,7 +243,15 @@ footer {
 
 #food-html-img {
     border-radius: 5px;
-    max-width: 500px;
+    transition: all 0.2s ease;
+    max-height: 673px;
+    width: 100%;
+    object-fit: cover;
+}
+
+#food-html-img:hover {
+    border-radius: 5px;
+    transform: scale(1.025);
 }
 
 #calories-per-100g-chart {
@@ -265,9 +273,6 @@ footer {
 #calories-per-h5 {
     font-family: "Lilita One", sans-serif;
     text-decoration: none;
-    /* display: flex;
-    align-items: center;
-    align-content: center; */
 }
 
 #calories-per-text {
