@@ -29,7 +29,9 @@ const myBarChart = new Chart(ctxBarChart, {
     datasets: [
       {
         data: [fat, carbohydrates, protein],
-        backgroundColor: ['#e5a641', '#e94b43', '#419ad6'],
+        backgroundColor: ['#FF6347', '#FFD700', '#4682B4'],
+        borderColor: ['#7A1200', '#8F7900', '#224058'], // Darker shades of the background colors for contrast
+        borderWidth: 3, // Adjust the width of the border as needed
         barPercentage: 1,
       },
     ],
@@ -87,7 +89,7 @@ const myBarChart = new Chart(ctxBarChart, {
             fontColor: '#555759',
             fontSize: 15,
             fontStyle: 700,
-            labelString: 'Macronutrients (g) per 100g',
+            // labelString: 'Macronutrients (g) per 100g',
           },
         },
       ],

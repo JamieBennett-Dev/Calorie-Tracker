@@ -241,6 +241,60 @@ footer {
     color: #FFF;
 }
 
+#food-html-img {
+    border-radius: 5px;
+    max-width: 500px;
+}
+
+#calories-per-100g-chart {
+    background-color: rgba(0, 86, 224, 0.2);
+    color: #141414;
+    border: 2px solid #0056E0;
+    border-radius: 5px;
+    font-family: "Sarabun", sans-serif;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+#calories-per-100g-chart:hover {
+    background-color: rgba(255,173,209, 0.3);
+    border: 2px solid #E00061;
+    transform: scale(1.05);
+}
+
+#calories-per-h5 {
+    font-family: "Lilita One", sans-serif;
+    text-decoration: none;
+    /* display: flex;
+    align-items: center;
+    align-content: center; */
+}
+
+#calories-per-text {
+    font-family: "Sarabun", sans-serif;
+}
+
+#macronutrients-chart {
+    background-color: rgba(255,173,209, 0.3);
+    border: 2px solid #E00061;
+    color: #141414;
+    border-radius: 5px;
+    font-family: "Sarabun", sans-serif;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+#macronutrients-chart:hover {
+    background-color: rgba(0, 86, 224, 0.2);
+    border: 2px solid #0056E0;
+    transform: scale(1.05);
+}
+
+#chart-subtitle {
+    color: #707070;
+    font-family: "Sarabun", sans-serif;
+}
+
 /* ----------Next Page Styles---------- */
 .page-item {
     margin: 0 3px;
