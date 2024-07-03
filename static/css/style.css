@@ -250,8 +250,9 @@ footer {
     color: #E00061;
     background-color: #FFF;
     border: 2px solid #E00061;
-    padding: 0.5rem 1.25rem;
+    padding: 0.25rem 1rem;
     transition: all 0.2s ease;
+    font-size: larger;
 }
 
 .page-item .page-link:hover {
