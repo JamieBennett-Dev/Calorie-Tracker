@@ -56,8 +56,9 @@ const myBarChart = new Chart(ctxBarChart, {
             drawOnChartArea: false,
           },
           ticks: {
-            fontColor: '#555759',
-            fontSize: 11,
+            fontColor: '#141414',
+            fontSize: 12,
+            fontFamily: 'Sarabun, sans-serif', // Add this line to set the font family
           },
         },
       ],
