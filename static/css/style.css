@@ -433,6 +433,16 @@ h4 strong {
     color: #E00061;
 }
 
+.progress {
+    background-color: #FFF;
+    border: 2px solid #E00061;
+    transition: all 0.2s ease;
+}
+
+#food-log-card-op:hover .progress {
+    border: 2px solid #0056E0;
+}
+
 .progress-bar {
     background-color: #0056E0;
     font-family: "Lilita One", sans-serif;
@@ -442,6 +452,3 @@ h4 strong {
     transition: all 0.2s ease;
     background-color: #E00061;
 }
-
-
-
