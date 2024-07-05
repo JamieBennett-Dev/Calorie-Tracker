@@ -452,3 +452,10 @@ h4 strong {
     transition: all 0.2s ease;
     background-color: #E00061;
 }
+
+/* ----------food_log_delete.html Styles---------- */
+#page-h1-delete {
+    font-family: "Lilita One", sans-serif;
+    color: #FF0000;
+    text-shadow: -0.5px -0.5px 0 #00173D, 0.5px -0.5px 0 #00173D, -0.5px 0.5px 0 #00173D, 0.5px 0.5px 0 #00173D;
+}
