@@ -1,5 +1,5 @@
 from django import forms
-from .models import Food, Image
+from .models import Food, Image, Weight
 
 class FoodForm(forms.ModelForm):
     '''
