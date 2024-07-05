@@ -274,7 +274,6 @@ footer {
 #calories-per-100g-chart:hover {
     background-color: rgba(255,173,209, 0.3);
     border: 2px solid #E00061;
-    transform: scale(1.05);
 }
 
 #calories-per-h5 {
@@ -299,7 +298,6 @@ footer {
 #macronutrients-chart:hover {
     background-color: rgba(0, 86, 224, 0.2);
     border: 2px solid #0056E0;
-    transform: scale(1.05);
 }
 
 #chart-subtitle {
