@@ -16,7 +16,7 @@
                 <div class="card mb-3 border-0">
 
                     <!-- Food image -->
-                    <a href="#">
+                    <a href="{% url 'food_details' food.id %}">
                         <img 
                             src="{{ food.image.image.url|default:'../../static/images/no_image.png' }}" 
                             class="img-fluid"
