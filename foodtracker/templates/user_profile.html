@@ -1,7 +1,171 @@
 {% extends 'base.html' %}
 
-{% block title %}Calorie Tracker | {{ title }}{% endblock %}
+{% load static %}
+
+{% block title %}Food Tracker | Food Log{% endblock %}
 
 {% block body %}
-<h1 class="mb-0">user_profile.html</h1>
+<div>
+    <div class="container-fluid px-4">
+        <div class="d-flex justify-content-center">
+            <h1 class="my-4" id="page-h1"><i class="fas fa-user pe-2"></i>Your Profile</h1>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12">
+                
+                    <div class="row">
+                        <div class="col-12 col-lg-6">
+
+                            <div class="card mb-4" id="food-log-card-lg">
+                                <div class="card-header">
+                                    <h4 class="mb-0" id="calories-per-h5">Hey,<strong id="username" class="ps-2">{{ user.username }}</strong>!</h4>
+                                </div>
+                                <div class="card-body" id="user-card-body">
+
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <p class="mb-1">
+                                            Username: <strong>{{ user.username }}</strong>
+                                        </p>
+                                    </div>
+
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <p class="mb-1">
+                                            Email: <strong>{{ user.email }}</strong>
+                                        </p>
+                                    </div>
+
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <p class="mb-1">
+                                            Date joined: <strong>{{ user.date_joined }}</strong>
+                                        </p>
+                                    </div>
+
+                                    <div class="d-flex w-100 justify-content-between">
+                                        <p class="mb-1">
+                                            Last login: <strong>{{ user.last_login }}</strong>
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="card mb-4" id="food-log-card-lg">
+
+                                <div class="card-header">
+                                    <h4 class="mb-0" id="calories-per-h5">Record Your Weight</h4>
+                                </div>
+                                <div class="card-body" id="user-card-body">
+
+                                <div class="form-group">
+          
+                                        <form action="{% url 'weight_log' %}" method="POST">
+                                            {% csrf_token %}
+                                            <div class="form-group">
+                                                <div class="row align-items-center">
+                                                    <div class="col-5">
+                                                        <label for="date_weight" class="form-label">
+                                                            Date
+                                                        </label>
+                                                        <input
+                                                            class="form-control"
+                                                            type="date"
+                                                            name="date" 
+                                                            id="date"
+                                                        >
+                                                    </div>
+                                                    <div class="col-5">
+                                                        <label for="weight" class="form-label">
+                                                            Weight (kg)
+                                                        </label>
+                                                        <input 
+                                                            class="form-control"
+                                                            type="number" 
+                                                            name="weight"
+                                                            id="weight"
+                                                            placeholder="0.00" required name="weight" 
+                                                            min="0" 
+                                                            value="0" 
+                                                            step="1" 
+                                                            title="Weight" 
+                                                            pattern="^\d*(\.\d{0,2})?$"
+                                                        >
+                                                    </div>
+                                                    <div class="col-2 mt-2">
+                                                        <button type="submit" class="btn mt-4 border-0 text-white" id="save">
+                                                            Add
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="card mb-4" id="food-log-card-lg">
+                                <div class="card-header">
+                                    <h4 class="mb-0" id="calories-per-h5">Weight Log</h4>
+                                </div>
+                                <div class="card-body">
+
+                                    <table id="weightable" class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" class="col-md-4">Weight in kg</th>
+                                                <th scope="col" class="col-md-4">Date</th>
+                                                <th scope="col" class="col-md-4"></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            {% for weight_record in user_weight_log %}
+                                                <tr>
+                                                    <td class="col-md-4">{{ weight_record.weight }}</td>
+                                                    <td class="col-md-4">{{ weight_record.entry_date|date:"Y-m-d" }}</td>
+                                                    <td class="col-md-4">
+                                                        <a class="btn btn-success my-1 border-0" href="#">
+                                                        <i class="fas fa-edit"></i>
+                                                    </a>
+                                                    <a class="btn btn-danger border-0" href="{% url 'weight_log_delete' weight_record.id %}">
+                                                        <i class="fas fa-trash-alt"></i>
+                                                    </a>
+                                                    </td>
+                                                </tr>
+                                            {% endfor %}
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="col-12 col-lg-6">
+                            <div class="card" id="food-log-card-op">
+                                <div class="card-header">
+                                    <h4 class="mb-0" id="calories-per-h5">Weight History</h4>
+                                </div>
+                                <div class="card-body justify-content-center">
+                                    <div class="chart-bar">
+                                        <canvas id="myChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+            </div>
+        </div>
+
+    </div>
+</div>    
+{% endblock %}
+
+{% block script %}
+    <!-- Page level plugins -->    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="{% static 'js/userProfile.js' %}"></script>
 {% endblock %}

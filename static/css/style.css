@@ -26,6 +26,10 @@
     box-sizing: border-box;
 }  
 
+body {
+    background-color: #f1f1f1;
+}
+
 /* ----------Navbar Styles---------- */
 nav {
     background-color: #0056E0;
@@ -348,7 +352,6 @@ footer {
 #food-log-card:hover {
     background-color: rgba(255,173,209, 0.3);
     border: 2px solid #E00061;
-    transform: scale(1.05);
 }
 
 #food-log-card-lg {
@@ -362,7 +365,6 @@ footer {
 #food-log-card-lg:hover {
     background-color: rgba(255,173,209, 0.3);
     border: 2px solid #E00061;
-    transform: scale(1.025);
 }
 
 #food-log-card-lg h5 {
@@ -419,7 +421,6 @@ footer {
 #food-log-card-op:hover {
     background-color: rgba(0, 86, 224, 0.2);
     border: 2px solid #0056E0;
-    transform: scale(1.05);
 }
 
 h4 strong {
@@ -458,4 +459,46 @@ h4 strong {
     font-family: "Lilita One", sans-serif;
     color: #FF0000;
     text-shadow: -0.5px -0.5px 0 #00173D, 0.5px -0.5px 0 #00173D, -0.5px 0.5px 0 #00173D, 0.5px 0.5px 0 #00173D;
+}
+
+/* ----------user_profile.html Styles---------- */
+#username {
+    color: #E00061;
+    transition: all 0.2s ease;
+}
+
+#food-log-card-lg:hover #username {
+    color: #0056E0;
+}
+
+#user-card-body {
+    font-family: "Sarabun", sans-serif;
+}
+
+#weightable {
+    border: 2px solid #E00061;
+    transition: all 0.2s ease;
+    font-family: "Sarabun", sans-serif;
+}
+
+#food-log-card-lg:hover #weightable {
+    border: 2px solid #0056E0;
+}
+
+#weightable th, #weightable td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.btn-success {
+    color: #FFF;
+    background-color: rgba(0,204,78, 0.6);
+    transition: all 0.2s ease;
+    
+}
+
+.btn-success:hover {
+    transform: scale(1.05);
+    background-color: rgba(0,204,78, 0.8);
+    color: #FFF;
 }

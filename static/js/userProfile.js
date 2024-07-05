@@ -14,7 +14,8 @@ let values = recorded_weight.flat();
 // Set new default font family and font color to mimic Bootstrap's default styling
 Chart.defaults.global.defaultFontFamily =
   'system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"';
-Chart.defaults.global.defaultFontColor = '#858796';
+Chart.defaults.global.defaultFontColor = '#000000';
+Chart.defaults.global.defaultFontFamily = 'Sarabun, sans-serif';
 
 // Area Chart - Weight History
 const ctxAreaChart = document.getElementById('myChart');
@@ -54,7 +55,7 @@ const myAreaChart = new Chart(ctxAreaChart, {
           scaleLabel: {
             display: true,
             padding: 10,
-            fontColor: '#555759',
+            fontColor: '#000000',
             fontSize: 16,
             fontStyle: 700,
             labelString: 'Date',
@@ -79,7 +80,7 @@ const myAreaChart = new Chart(ctxAreaChart, {
           scaleLabel: {
             display: true,
             padding: 10,
-            fontColor: '#555759',
+            fontColor: '#000000',
             fontSize: 16,
             fontStyle: 700,
             labelString: 'Weight in kg',
