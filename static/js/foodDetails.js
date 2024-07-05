@@ -18,7 +18,8 @@ protein = parseFloat(proteinValue);
 // Set new default font family and font color to mimic Bootstrap's default styling
 Chart.defaults.global.defaultFontFamily =
   'system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"';
-Chart.defaults.global.defaultFontColor = '#858796';
+Chart.defaults.global.defaultFontColor = '#000000';
+Chart.defaults.global.defaultFontFamily = 'Sarabun, sans-serif';
 
 // Horizontal Bar Chart - Macronutrients breakdown
 const ctxBarChart = document.getElementById('myBarChart');
@@ -56,7 +57,7 @@ const myBarChart = new Chart(ctxBarChart, {
             drawOnChartArea: false,
           },
           ticks: {
-            fontColor: '#141414',
+            fontColor: '#000000',
             fontSize: 12,
             fontFamily: 'Sarabun, sans-serif', // Add this line to set the font family
           },
@@ -73,7 +74,7 @@ const myBarChart = new Chart(ctxBarChart, {
           ticks: {
             padding: 5,
             beginAtZero: true,
-            fontColor: '#555759',
+            fontColor: '#000000',
             fontSize: 11,
             min: 0,
             max: 100,
@@ -86,11 +87,11 @@ const myBarChart = new Chart(ctxBarChart, {
           },
           scaleLabel: {
             display: true,
-            padding: 0,
-            fontColor: '#555759',
+            padding: 10,
+            fontColor: '#000000',
             fontSize: 15,
             fontStyle: 700,
-            // labelString: 'Macronutrients (g) per 100g',
+            labelString: 'Macronutrients (g) per 100g',
           },
         },
       ],
