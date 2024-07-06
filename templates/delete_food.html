@@ -1,14 +1,24 @@
 {% extends 'base.html' %}
 
-{% block title %}Delete Food: {{ food.food_name }}{% endblock %}
-
+{% block title %}Calorie Tracker | Delete Item {% endblock %}
 {% block body %}
-<div class="container mt-5">
-    <h2>Are you sure you want to delete "{{ food.food_name }}"?</h2>
-    <form method="POST">
-        {% csrf_token %}
-        <button type="submit" class="btn btn-danger">Yes, delete</button>
-        
-    </form>
+<div>
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <div class="card mt-4" id="food-log-card">
+                    <div class="card-body">
+                        <div class="form-group">
+                            <form method="POST" class="d-flex justify-content-center align-items-center fs-5">
+                                {% csrf_token %}
+                                Are you sure you want to delete {{ food.food_name }}?
+                                <button type="submit" class="btn ms-2 fs-6" id="cancel">Delete</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 {% endblock %}
