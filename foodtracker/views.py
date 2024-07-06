@@ -301,18 +301,6 @@ def category_details_view(request, category_name):
         'title': category.category_name
     })
 
-# added
-# @login_required
-# def update_food(request, pk):
-#     food = get_object_or_404(Food, pk=pk)
-#     if request.method == 'POST':
-#         form = FoodForm(request.POST, instance=food)
-#         if form.is_valid():
-#             form.save()
-#             return redirect('index') 
-#     else:
-#         form = FoodForm(instance=food)
-#     return render(request, 'update_food.html', {'form': form, 'food': food})
 
 @login_required
 def update_food(request, pk):
