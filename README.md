@@ -66,3 +66,74 @@ I created a site map and workflow diagram:
 I used Github projects to convert my user stories into actionable tasks. The acceptance criteria was very helpful to ensure all necessary tasks were completed.
 
 ![Screenshot](static/images/ct-kanban2.png)
+
+## Design
+### Wireframes and Features
+
+This site is fully responsive and accessible on mboile, tablet and desktop devices.
+
+Homepage Wireframe:
+
+**homepage wireframe here**
+
+**All Users:**
+- Are able to view added items
+- Are able to access log in or register
+
+**Logged in Users:**
+- Are able to view items by category
+- Are able to add new items
+- Are able to access their personal food log
+- Are able to access their personal profile
+- Are able to log out
+
+Logged in users will have a personalised Food Log with their Foods consumed today:
+
+**food log page wireframe here**
+
+Logged in users will be able to access their own personal information:
+
+**user profile page wireframe here**
+
+## Design Choices
+### Colours
+
+I used [coolors.co](https://coolors.co/00173d-0056e0-adcdff-3d001b-e00061-ffadd1) to generate my colour pallet:
+
+![Screenshot](static/images/ct-colours.png)
+
+I chose a clean and simple website design that prioritises content. Using a vibrant color scheme, I aimed to balance minimalism with boldness. The off-white background (#f1f1f1) maintains simplicity and cleanliness, while splashes of color inject visual interest against this neutral backdrop. This approach creates a modern aesthetic that is stylish yet restrained.
+
+The combination of blue and raspberry forms a harmonious contrast, complemented by cool off-white tones, ensuring a cohesive and balanced palette. Neutral colors were selected to promote overall harmony.
+
+The result is a thoughtfully curated color palette that enriches the design with sophistication and vibrancy while preserving its elegance.
+
+## Validation Test
+**Validation testing images go here**
+
+## Technologies Used
+
+- HTML
+- CSS
+- Bootstrap
+- Python
+- BootStrap
+- PostgreSQL Database
+
+- GitPod development environment used
+- GitHub used for version control and code hosting
+- GitHub Projects used for Agile Methodology
+
+## Deployment
+
+- I used Heroku to deploy my project
+
+## Credits
+
+- I got various ideas from different projects using this site:
+https://github.com/topics/calories-tracker
+- ChatGPT was used for troubleshooting, bug fixing and content generation.
+- Fontawesome was used for icons
+- Two Google fonts
+- Balsamiq Wireframes
+- Logo and flow chart created via **whatever i use to create it**
