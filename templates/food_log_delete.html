@@ -4,7 +4,7 @@
 
 {% block body %}
 <div>
-    <div class="container-fluid">
+    <div>
 
         <h1 class="my-4 d-flex justify-content-center" id="page-h1"><i class="fas fa-utensils pe-2"></i>Food Log</h1>
 
@@ -30,5 +30,11 @@
             </div>
 
     </div>
+    <div
+                class="col-12 d-flex align-items-center">
+                <a href="{% url 'index' %}" class="btn mt-4 fs-5" id="go-back-btn">
+                    <i class="fa-solid fa-circle-left pe-2"></i>Go Back
+                </a>
+            </div>
 </div>
 {% endblock %}
