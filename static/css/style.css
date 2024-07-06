@@ -517,3 +517,16 @@ h4 strong {
     text-align: center;
     vertical-align: middle;
 }
+
+/* ----------delete_food.html Styles---------- */
+#food-log-card-delete {
+    background-color: rgba(255, 0, 0, 0.1);
+    border: 2px solid #FF0000;
+    border-radius: 5px;
+    font-family: "Sarabun", sans-serif;
+    transition: all 0.2s ease;
+}
+
+#food-log-card-delete:hover {
+    background-color: rgba(255, 0, 0, 0.2);
+}
