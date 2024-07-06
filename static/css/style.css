@@ -251,8 +251,17 @@ footer {
     color: #FFF;
 }
 
-#test {
-    color: #FF0000;
+#update-btn {
+    font-family: "Lilita One", sans-serif;
+    color: #00CC4E;
+    border: 2px solid #00CC4E;
+    transition: all 0.2s ease;
+}
+
+#update-btn:hover {
+    background-color: #00CC4E;
+    transform: scale(1.05);
+    color: #FFF;
 }
 
 #food-html-img {

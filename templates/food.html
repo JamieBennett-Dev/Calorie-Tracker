@@ -79,12 +79,12 @@
 
         </div>
         <div class="col-12">
-                <a href="{% url 'index' %}" class="btn my-4 fs-5 pe-2" id="go-back-btn">
+                <a href="{% url 'index' %}" class="btn my-4 fs-5" id="go-back-btn">
                     <i class="fa-solid fa-circle-left pe-2"></i>Go Back</a>
                 {% if user.is_authenticated and user.is_staff %}
-                <a href="{% url 'update_food' food.pk %}" class="btn btn-success border-0 fs-5">
+                <a href="{% url 'update_food' food.pk %}" class="btn fs-5 mx-4" id="update-btn">
                     <i class="fa-solid fa-edit pe-2"></i>Update Food</a>
-                <a href="{% url 'delete_food' food.pk %}" class="btn my-1 fs-5 ps-2" id="go-back-btn">
+                <a href="{% url 'delete_food' food.pk %}" class="btn my-1 fs-5" id="go-back-btn">
                     <i class="fa-solid fa-trash pe-2"></i>Delete Food</a>
                 {% endif %}
         </div>
