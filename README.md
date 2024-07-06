@@ -46,8 +46,11 @@ As a User:
 | Add a new food item by filling out required fields. | Log foods that are not already in the database. | 1: The user can access an 'Add Food' form from the food list page and navbar. 2: The form requires fields for name, category and nutritional values. 3: A confirmation message is displayed upon successful addition of a new food item.
 | View food items by category. | Easily find what I am looking for. | 1: The user can filter food items by category via the navbar. 2: Only food items within their selected category are dispalyed.
 | Ensure my personal and health data is stored securely. | Ensure my privacy is protected. | 1: All personal and health data is encrypted in the database. 2: The user’s data is not shared with third parties without consent.
-| Ensure my password and personal information is stored securely | Ensure my privacy is protected. | 1: Passwords are stored using secure hashing algorithms. 2: The application uses HTTPS to secure data transmission.
+| Ensure my password and personal information is stored securely. | Ensure my privacy is protected. | 1: Passwords are stored using secure hashing algorithms. 2: The application uses HTTPS to secure data transmission.
 
 
 As an Admin:
 |I want to.. | So that I can.. | Acceptance Criteria
+| ----------- | ----------- | ----------- |
+| Add food items to the food tracker app through the Django admin interface. | Ensure users have a more comprehensive food database to choose from. | 1: The admin can access the food management interface through the Django admin dashboard. 2: The admin can add new food items by entering required details. 3: A confirmation message is displayed upon successful addition.
+| Upload images for food items. | Ensure users can have a visual reference for the foods they are logging. | 1: The admin can upload images for food items through the Django admin dashboard. 2: The uploaded images are displayed alongside the corresponding food items in the food list.
