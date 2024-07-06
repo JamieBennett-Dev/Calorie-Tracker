@@ -113,27 +113,28 @@ The result is a thoughtfully curated color palette that enriches the design with
 
 ## Technologies Used
 
-- HTML
-- CSS
-- Bootstrap
-- Python
-- BootStrap
-- PostgreSQL Database
+- HTML.
+- CSS.
+- Bootstrap.
+- Python.
+- BootStrap.
+- PostgreSQL Database.
 
-- GitPod development environment used
-- GitHub used for version control and code hosting
-- GitHub Projects used for Agile Methodology
+- GitPod development environment used.
+- GitHub used for version control and code hosting.
+- GitHub Projects used for Agile Methodology.
+- W3C for validation testing.
 
 ## Deployment
 
-- I used Heroku to deploy my project
+- I used [Heroku](https://dashboard.heroku.com/) to deploy my project.
 
 ## Credits
 
 - I got various ideas from different projects using this site:
-https://github.com/topics/calories-tracker
+https://github.com/topics/calories-tracker.
 - ChatGPT was used for troubleshooting, bug fixing and content generation.
-- Fontawesome was used for icons
-- Two Google fonts
-- Balsamiq Wireframes
-- Logo and flow chart created via **whatever i use to create it**
+- Fontawesome was used for icons.
+- Two Google fonts.
+- Balsamiq Wireframes.
+- Logo and flow chart created via **whatever i use to create it**.
