@@ -137,4 +137,4 @@ https://github.com/topics/calories-tracker.
 - Fontawesome was used for icons.
 - Two Google fonts.
 - Balsamiq Wireframes.
-- Logo and flow chart created via [dbdiagram](https://dbdiagram.io/d).
+- Database diagram created via [dbdiagram](https://dbdiagram.io/d).
