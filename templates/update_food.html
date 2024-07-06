@@ -31,13 +31,7 @@
                             <div class="form-group">
                                 <form method="POST" enctype="multipart/form-data">
                                     {% csrf_token %}
-                                    {{ form.as_p }}
-                                    
-                                    {{ image_formset.management_form }}
-                                    {% for form in image_formset %}
-                                        {{ form.as_p }}
-                                    {% endfor %}
-                                    
+                                    {{ form.as_p }} 
                                     <button type="submit" class="btn btn-primary fs-5 me-1" id="save">Save</button>
                                     <a href="{% url 'index' %}" class="btn btn-outline-dark fs-5" id="cancel">Cancel</a>
                                 </form>
