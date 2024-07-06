@@ -27,7 +27,6 @@ Whether you're looking to lose weight, maintain a healthy diet, or simply track 
 
 ## User Stories
 
-
 As a User:
 |I want to.. | So that I can.. | Acceptance Criteria
 | ----------- | ----------- | ----------- |
@@ -48,9 +47,22 @@ As a User:
 | Ensure my personal and health data is stored securely. | Ensure my privacy is protected. | 1: All personal and health data is encrypted in the database. 2: The user’s data is not shared with third parties without consent.
 | Ensure my password and personal information is stored securely. | Ensure my privacy is protected. | 1: Passwords are stored using secure hashing algorithms. 2: The application uses HTTPS to secure data transmission.
 
-
 As an Admin:
 |I want to.. | So that I can.. | Acceptance Criteria
 | ----------- | ----------- | ----------- |
 | Add food items to the food tracker app through the Django admin interface. | Ensure users have a more comprehensive food database to choose from. | 1: The admin can access the food management interface through the Django admin dashboard. 2: The admin can add new food items by entering required details. 3: A confirmation message is displayed upon successful addition.
 | Upload images for food items. | Ensure users can have a visual reference for the foods they are logging. | 1: The admin can upload images for food items through the Django admin dashboard. 2: The uploaded images are displayed alongside the corresponding food items in the food list.
+
+## Workflow
+### Agile Methodology
+For this project I adopted an Agile methodology. This is the first time I have used this on a solo project, however, I have used it as a group during three previous hackathons. This has helped me to: 
+- Organise and prioritise my workflow.  This has been essential due to the very limited timeframe we had to complete this project.
+- Enabled me to adjust my expectations and still produce the required MVP
+
+I created a site map and workflow diagram: 
+
+**Database Schema here**
+
+I used Github projects to convert my user stories into actionable tasks. The acceptance criteria was very helpful to ensure all necessary tasks were completed.
+
+![Screenshot](static/images/ct-kanban2.png)
