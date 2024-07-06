@@ -27,11 +27,27 @@ Whether you're looking to lose weight, maintain a healthy diet, or simply track 
 
 ## User Stories
 
-As a user:
+
+As a User:
 |I want to.. | So that I can.. | Acceptance Criteria
 | ----------- | ----------- | ----------- |
 | Sign up for an account. | Track my calorie intake. | 1: The user can access a sign up from the homepage and navbar. 2: The form requires a unique username, email and password.
 | Log into my account. | Access my personal data. | 1: The user can access a login form from the homepage and navbar. 2: The user must enter a valid username and password to log in. 3: Upon successful login, the user is redirected to their dashboard.
 | Navigate the site easily using a clean and intuitive interface. | Quickly find and use the features I need. | 1: The user can access main features (profile, food log, weight history) from a clear and intuitive navigation menu. 2: All pages are designed with a consistent layout and design.
 | See my data presented in a clear and visually appealing manner using charts and graphs. | Better understand my progress and dietary habits. | 1: The user can view their data (food intake, macronutrient breakdown, weight history) in charts and graphs. 2:The data is updated in real-time as new entries are logged.
-| View my basic information (username, join date, last login). | Keep track of my account activity. | 1: The user can view their username, join date, and last login date on their profile page. 2: The information is displayed in a clear and readable format.
+| View my basic information. | Keep track of my account activity. | 1: The user can view their username, join date, and last login date on their profile page. 2: The information is displayed in a clear and readable format.
+| See a history of my previous weights and calorie additions. | Monitor my progress. | 1: The user can access their history from/on their profile. 2: The history shows a list of previous weights and calorie additions in chronological order. 3: Each entry includes the date, weight, and calorie addition details.
+| Log my daily food intake. | Track my calorie consumption. | 1: The user can access a food log form from their dashboard. 2: The form allows the user to select food items and enter quantities. 3: A confirmation message is displayed upon successful logging of food intake.
+| See a log of my previous food intakes. | Review my eating habits over time. | 1: The user can access a log history from their dashboard. 2: The log history displays a list of previous food intakes with dates and details. 3: The user can sort or filter the log history by date or food type.
+| Record my weight. | Monitor my weight changes over time. | 1: The user can access a weight entry form from their dashboard. 2: The form requires the user to enter their current weight. 3: A confirmation message is displayed upon successful weight entry.
+| View a weight history chart that updates with each new entry. | Visualise my weight trends. | 1: The user can view a weight history chart on their dashboard. 2: The chart updates dynamically with each new weight entry. 3: The chart displays weight trends over time.
+| View a macronutrient breakdown chart of my logged food. | Understand my nutritional intake in terms of fats, carbs, and protein. | 1: The user can view a macronutrient breakdown chart on their dashboard. 2: The chart updates dynamically based on the logged food intake. 3: The chart shows the proportions of fats, carbs, and protein.
+| See a list of food items along with their nutritional values. | Choose what to eat based on my dietrary needs. | 1: The user can access a foods list from the homepage and navbar. 2: Each food item displays its name, category, and nutritional values (fats, carbs, protein).
+| Add a new food item by filling out required fields. | Log foods that are not already in the database. | 1: The user can access an 'Add Food' form from the food list page and navbar. 2: The form requires fields for name, category and nutritional values. 3: A confirmation message is displayed upon successful addition of a new food item.
+| View food items by category. | Easily find what I am looking for. | 1: The user can filter food items by category via the navbar. 2: Only food items within their selected category are dispalyed.
+| Ensure my personal and health data is stored securely. | Ensure my privacy is protected. | 1: All personal and health data is encrypted in the database. 2: The user’s data is not shared with third parties without consent.
+| Ensure my password and personal information is stored securely | Ensure my privacy is protected. | 1: Passwords are stored using secure hashing algorithms. 2: The application uses HTTPS to secure data transmission.
+
+
+As an Admin:
+|I want to.. | So that I can.. | Acceptance Criteria
