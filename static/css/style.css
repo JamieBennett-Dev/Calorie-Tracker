@@ -237,16 +237,42 @@ footer {
     color: #FFF;
 }
 
-/* ----------food_.html Styles---------- */
+/* ----------food.html Styles---------- */
 #go-back-btn {
+    font-family: "Lilita One";
+    color: #E00061;
+    border: 2px solid #E00061;
+    transition: all 0.2s ease;
+}
+
+#go-back-btn:hover {
+    background-color: #E00061;
+    transform: scale(1.05);
+    color: #FFF;
+}
+
+#delete-btn {
     font-family: "Lilita One", sans-serif;
     color: #FF0000;
     border: 2px solid #FF0000;
     transition: all 0.2s ease;
 }
 
-#go-back-btn:hover {
+#delete-btn:hover {
     background-color: #FF0000;
+    transform: scale(1.05);
+    color: #FFF;
+}
+
+#update-btn {
+    font-family: "Lilita One", sans-serif;
+    color: #00CC4E;
+    border: 2px solid #00CC4E;
+    transition: all 0.2s ease;
+}
+
+#update-btn:hover {
+    background-color: #00CC4E;
     transform: scale(1.05);
     color: #FFF;
 }
@@ -490,17 +516,4 @@ h4 strong {
 #weightable th, #weightable td {
     text-align: center;
     vertical-align: middle;
-}
-
-.btn-success {
-    color: #FFF;
-    background-color: rgba(0,204,78, 0.6);
-    transition: all 0.2s ease;
-    
-}
-
-.btn-success:hover {
-    transform: scale(1.05);
-    background-color: rgba(0,204,78, 0.8);
-    color: #FFF;
 }

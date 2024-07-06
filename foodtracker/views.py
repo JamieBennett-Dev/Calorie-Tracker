@@ -4,7 +4,7 @@ from django.contrib.auth.decorators import login_required
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.db import IntegrityError
 from django.http import HttpResponseRedirect
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.urls import reverse
 
 from .models import User, Food, FoodCategory, FoodLog, Image, Weight
@@ -300,3 +300,24 @@ def category_details_view(request, category_name):
         'pages': pages,
         'title': category.category_name
     })
+
+# added
+@login_required
+def update_food(request, pk):
+    food = get_object_or_404(Food, pk=pk)
+    if request.method == 'POST':
+        form = FoodForm(request.POST, instance=food)
+        if form.is_valid():
+            form.save()
+            return redirect('index')  # Redirect to the 'index' URL name after saving changes
+    else:
+        form = FoodForm(instance=food)
+    return render(request, 'update_food.html', {'form': form, 'food': food})
+
+@login_required
+def delete_food(request, pk):
+    food = get_object_or_404(Food, pk=pk)
+    if request.method == 'POST':
+        food.delete()
+        return redirect('index')
+    return render(request, 'delete_food.html', {'food': food})
