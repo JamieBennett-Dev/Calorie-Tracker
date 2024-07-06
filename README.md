@@ -61,7 +61,7 @@ For this project I adopted an Agile methodology. This is the first time I have u
 
 I created a site map and workflow diagram: 
 
-**Database Schema here**
+![Screenshot](static/images/ct-schema.png)
 
 I used Github projects to convert my user stories into actionable tasks. The acceptance criteria was very helpful to ensure all necessary tasks were completed.
 
@@ -137,4 +137,4 @@ https://github.com/topics/calories-tracker.
 - Fontawesome was used for icons.
 - Two Google fonts.
 - Balsamiq Wireframes.
-- Logo and flow chart created via **whatever i use to create it**.
+- Logo and flow chart created via [dbdiagram](https://dbdiagram.io/d).
