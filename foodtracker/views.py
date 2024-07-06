@@ -301,46 +301,18 @@ def category_details_view(request, category_name):
         'title': category.category_name
     })
 
-# added
-# @login_required
-# def update_food(request, pk):
-#     food = get_object_or_404(Food, pk=pk)
-#     if request.method == 'POST':
-#         form = FoodForm(request.POST, instance=food)
-#         if form.is_valid():
-#             form.save()
-#             return redirect('index') 
-#     else:
-#         form = FoodForm(instance=food)
-#     return render(request, 'update_food.html', {'form': form, 'food': food})
 
 @login_required
 def update_food(request, pk):
     food = get_object_or_404(Food, pk=pk)
-    ImageFormSet = forms.modelformset_factory(Image, form=ImageForm, extra=0)  # Ensure extra is set to 1
-
     if request.method == 'POST':
-        form = FoodForm(request.POST, request.FILES, instance=food)
-        image_formset = ImageFormSet(request.POST, request.FILES, queryset=food.get_images.all())
-        
-        if form.is_valid() and image_formset.is_valid():
+        form = FoodForm(request.POST, instance=food)
+        if form.is_valid():
             form.save()
-
-            # Save image formset
-            for image_form in image_formset:
-                if image_form.cleaned_data:
-                    image = image_form.cleaned_data.get('image')
-                    if image:
-                        image_instance = image_form.save(commit=False)
-                        image_instance.food = food
-                        image_instance.save()
-            
-            return redirect('index')
+            return redirect('index') 
     else:
         form = FoodForm(instance=food)
-        image_formset = ImageFormSet(queryset=food.get_images.all())
-    
-    return render(request, 'update_food.html', {'form': form, 'image_formset': image_formset, 'food': food})
+    return render(request, 'update_food.html', {'form': form, 'food': food})
 
 
 @login_required
