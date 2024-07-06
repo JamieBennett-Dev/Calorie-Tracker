@@ -239,13 +239,26 @@ footer {
 
 /* ----------food.html Styles---------- */
 #go-back-btn {
+    font-family: "Lilita One";
+    color: #E00061;
+    border: 2px solid #E00061;
+    transition: all 0.2s ease;
+}
+
+#go-back-btn:hover {
+    background-color: #E00061;
+    transform: scale(1.05);
+    color: #FFF;
+}
+
+#delete-btn {
     font-family: "Lilita One", sans-serif;
     color: #FF0000;
     border: 2px solid #FF0000;
     transition: all 0.2s ease;
 }
 
-#go-back-btn:hover {
+#delete-btn:hover {
     background-color: #FF0000;
     transform: scale(1.05);
     color: #FFF;
