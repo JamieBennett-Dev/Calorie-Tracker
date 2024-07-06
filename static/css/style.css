@@ -237,7 +237,7 @@ footer {
     color: #FFF;
 }
 
-/* ----------food_.html Styles---------- */
+/* ----------food.html Styles---------- */
 #go-back-btn {
     font-family: "Lilita One", sans-serif;
     color: #FF0000;
@@ -249,6 +249,10 @@ footer {
     background-color: #FF0000;
     transform: scale(1.05);
     color: #FFF;
+}
+
+#test {
+    color: #FF0000;
 }
 
 #food-html-img {
@@ -490,17 +494,4 @@ h4 strong {
 #weightable th, #weightable td {
     text-align: center;
     vertical-align: middle;
-}
-
-.btn-success {
-    color: #FFF;
-    background-color: rgba(0,204,78, 0.6);
-    transition: all 0.2s ease;
-    
-}
-
-.btn-success:hover {
-    transform: scale(1.05);
-    background-color: rgba(0,204,78, 0.8);
-    color: #FFF;
 }
