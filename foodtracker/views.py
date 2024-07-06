@@ -302,16 +302,32 @@ def category_details_view(request, category_name):
     })
 
 
+# @login_required
+# def update_food(request, pk):
+#     food = get_object_or_404(Food, pk=pk)
+#     if request.method == 'POST':
+#         form = FoodForm(request.POST, instance=food)
+#         if form.is_valid():
+#             form.save()
+#             return redirect('index') 
+#     else:
+#         form = FoodForm(instance=food)
+#     return render(request, 'update_food.html', {'form': form, 'food': food})
+
 @login_required
 def update_food(request, pk):
     food = get_object_or_404(Food, pk=pk)
+    
     if request.method == 'POST':
         form = FoodForm(request.POST, instance=food)
         if form.is_valid():
             form.save()
-            return redirect('index') 
+            # Set success=True in the context to display the success message
+            return render(request, 'update_food.html', {'form': form, 'food': food, 'success': True})
     else:
         form = FoodForm(instance=food)
+    
+    # Render the form normally if it's a GET request or if form is not valid
     return render(request, 'update_food.html', {'form': form, 'food': food})
 
 
