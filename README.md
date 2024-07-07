@@ -74,12 +74,15 @@ This site is fully responsive and accessible on mobile, tablet and desktop devic
 ### Wireframes
 
 Homepage Wireframe:
+
 ![Screenshot](static/images/ct-wf-homepage.png)
 
 Food Log Wireframe:
+
 ![Screenshot](static/images/ct-wf-foodlog.png)
 
 User Profile Wireframe:
+
 ![Screenshot](static/images/ct-wf-profile.png)
 
 ## Features
@@ -89,12 +92,15 @@ User Profile Wireframe:
 - Are able to access log in or register
 
 Homepage:
+
 ![Screenshot](static/images/ct-index.png)
 
 Login:
+
 ![Screenshot](static/images/ct-login2.png)
 
 Register:
+
 ![Screenshot](static/images/ct-register.png)
 
 **Logged in Users:**
@@ -105,21 +111,27 @@ Register:
 - Are able to log out
 
 User Profile:
+
 ![Screenshot](static/images/ct-userprofile2.png)
 
 Food Categories:
+
 ![Screenshot](static/images/ct-foodcategory.png)
 
 Food Log: (FIX RESPONSIVE ISSUE BEFORE FINAL SUBMISSION) 🛑
+
 ![Screenshot](static/images/ct-foodlog.png) 
 
 Food View:
+
 ![Screenshot](static/images/ct-foods.png)
 
 Add Food:
+
 ![Screenshot](static/images/ct-foodadd.png)
 
 Update Food:
+
 ![Screenshot](static/images/ct-updatefood.png)
 
 ## Design Choices
