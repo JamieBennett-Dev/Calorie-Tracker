@@ -53,7 +53,7 @@ const myAreaChart = new Chart(ctxAreaChart, {
             display: true,
           },
           scaleLabel: {
-            display: true,
+            display: false,
             padding: 10,
             fontColor: '#000000',
             fontSize: 16,
@@ -66,7 +66,7 @@ const myAreaChart = new Chart(ctxAreaChart, {
         {
           ticks: {
             min: 0,
-            max: 120,
+            max: 200,
             maxTicksLimit: 12,
             padding: 10,
             // Include a 'kg' in the ticks
@@ -78,12 +78,12 @@ const myAreaChart = new Chart(ctxAreaChart, {
             color: 'rgba(0, 0, 0, .125)',
           },
           scaleLabel: {
-            display: true,
+            display: false,
             padding: 10,
             fontColor: '#000000',
             fontSize: 16,
             fontStyle: 700,
-            labelString: 'Weight in kg',
+            labelString: 'Weight (kg)',
           },
         },
       ],

@@ -1,25 +1,19 @@
 {% extends 'base.html' %}
-
 {% block title %}Calorie Tracker | Login{% endblock %}
-
 {% block body %}
 <div class="mt-auto">
     <div class="container">
         <div class="d-flex justify-content-center">
-            <h1 class="my-4" id="page-h1"><i class="fas fa-sign-in-alt pe-1"></i>Login</h1>
+            <h1 class="my-4 d-flex justify-content-center align-items-center" id="page-h1"><i class="fas fa-sign-in-alt pe-2"></i>Login</h1>
         </div>
-
         {% if message %}
             <div class="text-center text-danger pt-1 pb-2">{{ message }}</div>
         {% endif %}
-
         <div class="row">
             <div class="col-lg-6 offset-lg-3">
                 <div class="card mb-3 border-0">
                     <div class="card-body" id="login-card-body">
-    
                         <div class="form-group">
-
                             <form action="{% url 'login' %}" method="post">
                                 {% csrf_token %}
                                 <div class="form-group">
@@ -28,33 +22,28 @@
                                     </label>
                                     <input type="text" name="username" class="form-control" id="inputUsername" placeholder="Enter username" autofocus>
                                 </div>
-
                                 <div class="form-group">
                                     <label for="inputPassword1" class="form-label mt-4" id="login-label">
                                         Password
                                     </label>
                                     <input type="password" name="password" class="form-control" id="inputPassword1" placeholder="Enter password">
                                 </div>
-
                                 <div class="form-group mt-4">
-                                    <button type="submit" class="btn btn-primary fs-5" id="login-login-btn">
+                                    <button type="submit" class="btn fs-5 text-white" id="save">
                                         Login
                                     </button>
                                 </div>
                             </form>
-
                             <div class="mt-3" id="account-question">
                                 Don't have an account? <a href="{% url 'register' %}" id="login-register-here">
                                     Register here
                                 </a>
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
 </div>
 {% endblock %}

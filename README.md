@@ -4,7 +4,6 @@
 
 👋 Welcome to the Calorie Tracker App! This application is designed to help you monitor your daily calorie intake and manage your nutritional goals effectively.
 
-
 🎯 Whether you're looking to lose weight, maintain a healthy diet, or simply track your food consumption, our app provides you with the tools you need.
 
 ![Screenshot](static/images/ct-main.png)
@@ -54,6 +53,7 @@ As an Admin:
 | Upload images for food items. | Ensure users can have a visual reference for the foods they are logging. | 1: The admin can upload images for food items through the Django admin dashboard. 2: The uploaded images are displayed alongside the corresponding food items in the food list.
 
 ## Workflow
+
 ### Agile Methodology
 For this project I adopted an Agile methodology. This is the first time I have used this on a solo project, however, I have used it as a group during three previous hackathons. This has helped me to: 
 - Organise and prioritise my workflow.  This has been essential due to the very limited timeframe we had to complete this project.
@@ -68,9 +68,10 @@ I used Github projects to convert my user stories into actionable tasks. The acc
 ![Screenshot](static/images/ct-kanban2.png)
 
 ## Design
-### Wireframes and Features
 
 This site is fully responsive and accessible on mobile, tablet and desktop devices.
+
+### Wireframes
 
 Homepage Wireframe:
 
@@ -84,11 +85,23 @@ User Profile Wireframe:
 
 ![Screenshot](static/images/ct-wf-profile.png)
 
+## Features
+
 **All Users:**
 - Are able to view added items
 - Are able to access log in or register
 
-**Add images of pages for logged out users** 🛑
+Homepage:
+
+![Screenshot](static/images/ct-index.png)
+
+Login:
+
+![Screenshot](static/images/ct-login2.png)
+
+Register:
+
+![Screenshot](static/images/ct-register.png)
 
 **Logged in Users:**
 - Are able to view items by category
@@ -97,9 +110,32 @@ User Profile Wireframe:
 - Are able to access their personal profile
 - Are able to log out
 
-**Add images of pages for logged in users** 🛑
+User Profile:
+
+![Screenshot](static/images/ct-userprofile2.png)
+
+Food Categories:
+
+![Screenshot](static/images/ct-foodcategory.png)
+
+Food Log: (FIX RESPONSIVE ISSUE BEFORE FINAL SUBMISSION) 🛑
+
+![Screenshot](static/images/ct-foodlog.png) 
+
+Food View:
+
+![Screenshot](static/images/ct-foods.png)
+
+Add Food:
+
+![Screenshot](static/images/ct-foodadd.png)
+
+Update Food:
+
+![Screenshot](static/images/ct-updatefood.png)
 
 ## Design Choices
+
 ### Colours
 
 I used [coolors.co](https://coolors.co/00173d-0056e0-adcdff-3d001b-e00061-ffadd1) to generate my colour pallet:
@@ -112,7 +148,13 @@ The combination of blue and raspberry forms a harmonious contrast, complemented 
 
 The result is a thoughtfully curated color palette that enriches the design with sophistication and vibrancy while preserving its elegance.
 
-## Validation Test
+## Validation Testing
+
+### CSS Validation
+
+No Errors upon first entry 🎉:
+
+![Screenshot](static/images/ct-cssvalidation.png)
 
 **Validation testing images go here** 🛑
 

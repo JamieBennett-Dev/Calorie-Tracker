@@ -95,6 +95,7 @@ footer {
     transition: all 0.2s ease;
     border: 2px solid #0056E0;
     border-radius: 5px;
+    height: 205px;
 }
 
 #index-card-body:hover {
@@ -122,6 +123,10 @@ footer {
 #food-list-image {
     border-radius: 5px;
     transition: all 0.2s ease;
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
 }
 
 #food-list-image:hover {
@@ -145,6 +150,12 @@ footer {
     background-color: rgba(0, 86, 224, 0.2);
     border: 2px solid #0056E0;
     border-radius: 5px;
+    transition: all 0.2s ease;
+}
+
+#login-card-body:hover {
+    background-color: rgba(255,173,209, 0.3);
+    border: 2px solid #E00061;
 }
 
 #login-login-btn {
@@ -165,12 +176,17 @@ footer {
 
 #login-register-here {
     font-weight: bold;
-    color: #0056E0;
+    color: #E00061;
     transition: all 0.2s ease;
 }
 
-#login-register-here:hover {
-    color: #E00061;
+#login-card-body:hover #login-register-here {
+    color: #0056E0;
+}
+
+#inputUsername, #inputPassword, #inputPassword1 {
+    background-color: #FFF;
+    border: 2px solid #141414;
 }
 
 /* ----------register.html Styles---------- */
@@ -178,6 +194,12 @@ footer {
     background-color: rgba(0, 86, 224, 0.2);
     border: 2px solid #0056E0;
     border-radius: 5px;
+    transition: all 0.2s ease;
+}
+
+#register-card-body:hover {
+    background-color: rgba(255,173,209, 0.3);
+    border: 2px solid #E00061;
 }
 
 #register-label {
@@ -195,6 +217,15 @@ footer {
 #register-register-btn:hover {
     background-color: #00CC4E;
     transform: scale(1.05);
+}
+
+#register-card-body:hover #login-register-here {
+    color: #0056E0;
+}
+
+#inputEmail, #inputPassword2 {
+    background-color: #FFF;
+    border: 2px solid #141414;
 }
 
 /* ----------food_add.html Styles---------- */
@@ -224,10 +255,10 @@ footer {
 
 #save {
     font-family: "Lilita One";
-    background-color: #0056E0;
+    background-color: #00CC4E;
     font-weight: normal;
     transition: all 0.2s ease;
-    border: 2px solid #0056E0;
+    border: 2px solid #00CC4E;
 }
 
 #save:hover {
@@ -247,6 +278,11 @@ footer {
     background-color: #FF0000;
     transform: scale(1.05);
     color: #FFF;
+}
+
+#id_food_name, #id_quantity, #id_calories, #id_fat, #id_carbohydrates, #id_protein, #id_category, #id_form-0-image {
+    background-color: #FFF;
+    border: 2px solid #141414;
 }
 
 /* ----------food.html Styles---------- */
@@ -494,6 +530,11 @@ h4 strong {
     background-color: #E00061;
 }
 
+#food_consumed {
+    background-color: #FFF !important;
+    border: 2px solid #141414 !important;
+}
+
 /* ----------food_log_delete.html Styles---------- */
 #page-h1-delete {
     font-family: "Lilita One", sans-serif;
@@ -528,6 +569,18 @@ h4 strong {
 #weightable th, #weightable td {
     text-align: center;
     vertical-align: middle;
+}
+
+#add-btn {
+    background-color: rgba(0,204,78, 0.2);
+    border: 2px solid #00CC4E;
+    color: #141414;
+    font-family: "Lilita One", sans-serif;
+}
+
+#date, #weight {
+    background-color: #FFF;
+    border: 2px solid #141414;
 }
 
 /* ----------delete_food.html Styles---------- */
