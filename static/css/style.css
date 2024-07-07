@@ -202,6 +202,18 @@ footer {
     font-family: "Lilita One", sans-serif;
 }
 
+#food-log-card-success {
+    background-color: rgba(0,204,78, 0.2);
+    border: 2px solid #00CC4E;
+    border-radius: 5px;
+    font-family: "Sarabun", sans-serif;
+    transition: all 0.2s ease;
+}
+
+#food-log-card-success:hover {
+    background-color: rgba(0,204,78, 0.3);
+}
+
 #food_add-card-body {
     background-color: rgba(0, 86, 224, 0.2);
     border: 2px solid #0056E0;
@@ -516,4 +528,17 @@ h4 strong {
 #weightable th, #weightable td {
     text-align: center;
     vertical-align: middle;
+}
+
+/* ----------delete_food.html Styles---------- */
+#food-log-card-delete {
+    background-color: rgba(255, 0, 0, 0.1);
+    border: 2px solid #FF0000;
+    border-radius: 5px;
+    font-family: "Sarabun", sans-serif;
+    transition: all 0.2s ease;
+}
+
+#food-log-card-delete:hover {
+    background-color: rgba(255, 0, 0, 0.2);
 }

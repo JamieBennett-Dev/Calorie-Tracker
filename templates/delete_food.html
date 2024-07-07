@@ -3,10 +3,10 @@
 {% block title %}Calorie Tracker | Delete Item {% endblock %}
 {% block body %}
 <div>
-    <div class="container-fluid">
+    <div>
         <div class="row justify-content-center">
             <div class="col-12">
-                <div class="card mt-4" id="food-log-card">
+                <div class="card mt-4" id="food-log-card-delete">
                     <div class="card-body">
                         <div class="form-group">
                             <form method="POST" class="d-flex justify-content-center align-items-center fs-5">
@@ -20,5 +20,11 @@
             </div>
         </div>
     </div>
+    <div
+                class="col-12 d-flex align-items-center">
+                <a href="{% url 'index' %}" class="btn mt-4 fs-5" id="go-back-btn">
+                    <i class="fa-solid fa-circle-left pe-2"></i>Go Back
+                </a>
+            </div>
 </div>
 {% endblock %}
