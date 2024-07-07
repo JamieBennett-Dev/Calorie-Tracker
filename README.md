@@ -150,6 +150,12 @@ The result is a thoughtfully curated color palette that enriches the design with
 
 ## Validation Test
 
+### CSS Validation
+
+No Errors upon first entry 🎉:
+
+![Screenshot](static/images/ct-cssvalidation.png)
+
 **Validation testing images go here** 🛑
 
 ## Technologies Used
