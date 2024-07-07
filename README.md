@@ -53,6 +53,7 @@ As an Admin:
 | Upload images for food items. | Ensure users can have a visual reference for the foods they are logging. | 1: The admin can upload images for food items through the Django admin dashboard. 2: The uploaded images are displayed alongside the corresponding food items in the food list.
 
 ## Workflow
+
 ### Agile Methodology
 For this project I adopted an Agile methodology. This is the first time I have used this on a solo project, however, I have used it as a group during three previous hackathons. This has helped me to: 
 - Organise and prioritise my workflow.  This has been essential due to the very limited timeframe we had to complete this project.
@@ -68,9 +69,9 @@ I used Github projects to convert my user stories into actionable tasks. The acc
 
 ## Design
 
-### Wireframes
-
 This site is fully responsive and accessible on mobile, tablet and desktop devices.
+
+### Wireframes
 
 Homepage Wireframe:
 ![Screenshot](static/images/ct-wf-homepage.png)
