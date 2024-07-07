@@ -133,8 +133,8 @@ The result is a thoughtfully curated color palette that enriches the design with
 
 ## Credits
 
-- I got various ideas from different projects using this site:
-https://github.com/topics/calories-tracker.
+- I got various ideas from different projects using this site: https://github.com/topics/calories-tracker.
+- [Favicon](https://www.google.com/search?sca_esv=5253a18b766cf5c0&sxsrf=ADLYWILTbik0GwE4j9HATDwkyEsPvy9d8w:1720365503275&q=calorie+calculator+logo&udm=2&fbs=AEQNm0Aa4sjWe7Rqy32pFwRj0UkWd8nbOJfsBGGB5IQQO6L3J_86uWOeqwdnV0yaSF-x2jo6Ttnu6iRjjgGjARfLolnBYg2tMdxbJFpG2a0dg6n0NSOUeL_Zp-ANwJjueSBq_UoE1Rqmx1qtxWQlddKd0bEv4-fvXrL1UXtmb7rYJIBkr79X849_zmlFz-2AGdL47Zwhhols&sa=X&ved=2ahUKEwj1n9P1nJWHAxWNVUEAHdffAt0QtKgLegQIDxAB&biw=1536&bih=695&dpr=1.25#vhid=pA5LQEXfUDD7oM&vssid=mosaic) link.
 - ChatGPT was used for troubleshooting, bug fixing and content generation.
 - Fontawesome was used for icons.
 - Two Google fonts.
