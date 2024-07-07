@@ -90,6 +90,9 @@ User Profile Wireframe:
 
 **Add images of pages for logged out users** 🛑
 
+Homepage:
+![Screenshot](static/images/ct-index.png)
+
 **Logged in Users:**
 - Are able to view items by category
 - Are able to add new items
@@ -98,6 +101,9 @@ User Profile Wireframe:
 - Are able to log out
 
 **Add images of pages for logged in users** 🛑
+
+User Profile:
+![Screenshot](static/images/ct-userprofile.png)
 
 ## Design Choices
 ### Colours
