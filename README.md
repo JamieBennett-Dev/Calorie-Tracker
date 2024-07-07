@@ -150,13 +150,17 @@ The result is a thoughtfully curated color palette that enriches the design with
 
 ## Validation Testing
 
+### HTML Validation
+
+**templates/delete_food.html** No errors upon first entry 🎉:
+
+![screenshot](static/images/ct-htmldeletefoodvalidation.png)
+
 ### CSS Validation
 
 No Errors upon first entry 🎉:
 
 ![Screenshot](static/images/ct-cssvalidation.png)
-
-**Validation testing images go here** 🛑
 
 ## Technologies Used
 
