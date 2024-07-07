@@ -178,7 +178,9 @@ The result is a thoughtfully curated color palette that enriches the design with
 
 ![Screenshot](static/images/ct-htmlindexvalidation.png)
 
-**templates/login.html**
+**templates/login.html** 2 errors upon first entry, both regarding an ID being used more than once:
+
+![Screenshot](static/images/ct-htmlloginvalidation.png)
 
 **templates/register.html**
 
