@@ -4,7 +4,6 @@
 
 👋 Welcome to the Calorie Tracker App! This application is designed to help you monitor your daily calorie intake and manage your nutritional goals effectively.
 
-
 🎯 Whether you're looking to lose weight, maintain a healthy diet, or simply track your food consumption, our app provides you with the tools you need.
 
 ![Screenshot](static/images/ct-main.png)
@@ -68,21 +67,21 @@ I used Github projects to convert my user stories into actionable tasks. The acc
 ![Screenshot](static/images/ct-kanban2.png)
 
 ## Design
-### Wireframes and Features
+
+### Wireframes
 
 This site is fully responsive and accessible on mobile, tablet and desktop devices.
 
 Homepage Wireframe:
-
 ![Screenshot](static/images/ct-wf-homepage.png)
 
 Food Log Wireframe:
-
 ![Screenshot](static/images/ct-wf-foodlog.png)
 
 User Profile Wireframe:
-
 ![Screenshot](static/images/ct-wf-profile.png)
+
+## Features
 
 **All Users:**
 - Are able to view added items
@@ -123,6 +122,7 @@ Update Food:
 ![Screenshot](static/images/ct-updatefood.png)
 
 ## Design Choices
+
 ### Colours
 
 I used [coolors.co](https://coolors.co/00173d-0056e0-adcdff-3d001b-e00061-ffadd1) to generate my colour pallet:
