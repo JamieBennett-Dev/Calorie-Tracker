@@ -170,11 +170,13 @@ The result is a thoughtfully curated color palette that enriches the design with
 
 **templates/food_log.html** (FIX RESPONSIVE ISSUE BEFORE FINAL SUBMISSION) 🛑
 
-**templates/food.html** Multiple errors upon first entry, however all regarding an ID being used more than once:
+**templates/food.html** Multiple errors upon first entry, all regarding an ID being used more than once:
 
 ![Screenshot](static/images/ct-htmlfoodvalidation.png)
 
-**templates/index.html**
+**templates/index.html** Multiple errors upon first entry, regarding an ID being used more than once & bad button type:
+
+![Screenshot](static/images/ct-htmlindexvalidation.png)
 
 **templates/login.html**
 
