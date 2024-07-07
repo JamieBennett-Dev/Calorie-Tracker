@@ -113,6 +113,9 @@ Food Categories:
 Food Log: (FIX RESPONSIVE ISSUE BEFORE FINAL SUBMISSION) 🛑
 ![Screenshot](static/images/ct-foodlog.png) 
 
+Food View:
+![Screenshot](static/images/ct-foods.png)
+
 ## Design Choices
 ### Colours
 
