@@ -118,7 +118,7 @@ Food Categories:
 
 ![Screenshot](static/images/ct-foodcategory.png)
 
-Food Log: (FIX RESPONSIVE ISSUE BEFORE FINAL SUBMISSION) 🛑
+Food Log:
 
 ![Screenshot](static/images/ct-foodlog.png) 
 
@@ -168,7 +168,9 @@ The result is a thoughtfully curated color palette that enriches the design with
 
 ![Screenshot](static/images/ct-htmlfoodlogdeletevalidation.png)
 
-**templates/food_log.html** (FIX RESPONSIVE ISSUE BEFORE FINAL SUBMISSION) 🛑
+**templates/food_log.html** Multiple errors upon first entry, all regarding an ID being used more than once:
+
+![Screenshot](static/images/ct-htmlfoodlogvalidation.png)
 
 **templates/food.html** Multiple errors upon first entry, all regarding an ID being used more than once:
 
