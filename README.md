@@ -109,6 +109,9 @@ Register:
 User Profile:
 ![Screenshot](static/images/ct-userprofile2.png)
 
+Food Categories:
+![Screenshot](static/images/ct-foodcategory.png)
+
 ## Design Choices
 ### Colours
 
