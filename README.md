@@ -70,11 +70,11 @@ I used Github projects to convert my user stories into actionable tasks. The acc
 ## Design
 ### Wireframes and Features
 
-This site is fully responsive and accessible on mboile, tablet and desktop devices.
+This site is fully responsive and accessible on mobile, tablet and desktop devices.
 
 Homepage Wireframe:
 
-**homepage wireframe here** 🛑
+![Screenshot](static/images/ct-wf-homepage.png)
 
 **All Users:**
 - Are able to view added items
@@ -89,11 +89,11 @@ Homepage Wireframe:
 
 Logged in users will have a personalised Food Log with their Foods consumed today:
 
-**food log page wireframe here** 🛑
+![Screenshot](static/images/ct-wf-foodlog.png)
 
 Logged in users will be able to access their own personal information:
 
-**user profile page wireframe here** 🛑
+![Screenshot](static/images/ct-wf-profile.png)
 
 ## Design Choices
 ### Colours
