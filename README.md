@@ -117,8 +117,9 @@ The result is a thoughtfully curated color palette that enriches the design with
 - HTML.
 - CSS.
 - Bootstrap.
+- JavaScript.
 - Python.
-- BootStrap.
+- Django.
 - PostgreSQL Database.
 
 - GitPod development environment used.
