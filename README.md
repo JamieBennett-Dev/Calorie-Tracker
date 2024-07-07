@@ -190,7 +190,9 @@ The result is a thoughtfully curated color palette that enriches the design with
 
 ![Screenshot](static/images/ct-htmlupdatefoodvalidation.png)
 
-**templates/user_profile.html**
+**templates/user_profile.html** Multiple errors upon first entry, regarding an ID being used more than once & 'for' attribute in label element must be the ID of a non-hidden form control:
+
+![Screenshot](static/images/ct-htmluserprofilevalidation.png)
 
 **templates/weight_log_delete.html** No errors upon first entry 🎉:
 
