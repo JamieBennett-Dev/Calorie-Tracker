@@ -88,8 +88,6 @@ User Profile Wireframe:
 - Are able to view added items
 - Are able to access log in or register
 
-**Add images of pages for logged out users** 🛑
-
 Homepage:
 ![Screenshot](static/images/ct-index.png)
 

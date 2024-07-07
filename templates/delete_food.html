@@ -1,5 +1,4 @@
 {% extends 'base.html' %}
-
 {% block title %}Calorie Tracker | Delete Item{% endblock %}
 {% block body %}
 <div>
@@ -20,11 +19,10 @@
             </div>
         </div>
     </div>
-    <div
-                class="col-12 d-flex align-items-center">
-                <a href="{% url 'index' %}" class="btn mt-4 fs-5" id="go-back-btn">
-                    <i class="fa-solid fa-circle-left pe-2"></i>Go Back
-                </a>
-            </div>
+    <div class="col-12 d-flex align-items-center">
+        <a href="{% url 'index' %}" class="btn mt-4 fs-5" id="go-back-btn">
+            <i class="fa-solid fa-circle-left pe-2"></i>Go Back
+        </a>
+    </div>
 </div>
 {% endblock %}

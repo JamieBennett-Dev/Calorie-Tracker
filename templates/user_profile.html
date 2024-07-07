@@ -1,9 +1,6 @@
 {% extends 'base.html' %}
-
 {% load static %}
-
 {% block title %}Calorie Tracker | Food Log{% endblock %}
-
 {% block body %}
 <div>
     <div class="container-fluid">
@@ -12,52 +9,41 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-12">
-                
                     <div class="row">
                         <div class="col-12 col-lg-6">
-
                             <div class="card mb-4" id="food-log-card-lg">
                                 <div class="card-header">
                                     <h4 class="mb-0" id="calories-per-h5">Hey,<strong id="username" class="ps-2">{{ user.username }}</strong>!</h4>
                                 </div>
                                 <div class="card-body" id="user-card-body">
-
                                     <div class="d-flex w-100 justify-content-between">
                                         <p class="mb-1">
                                             Username: <strong>{{ user.username }}</strong>
                                         </p>
                                     </div>
-
                                     <div class="d-flex w-100 justify-content-between">
                                         <p class="mb-1">
                                             Email: <strong>{{ user.email }}</strong>
                                         </p>
                                     </div>
-
                                     <div class="d-flex w-100 justify-content-between">
                                         <p class="mb-1">
                                             Date joined: <strong>{{ user.date_joined }}</strong>
                                         </p>
                                     </div>
-
                                     <div class="d-flex w-100 justify-content-between">
                                         <p class="mb-1">
                                             Last login: <strong>{{ user.last_login }}</strong>
                                         </p>
                                     </div>
-
                                 </div>
                             </div>
-
                             <div class="card mb-4" id="food-log-card-lg">
-
                                 <div class="card-header">
                                     <h4 class="mb-0" id="calories-per-h5">Record Your Weight</h4>
                                 </div>
                                 <div class="card-body" id="user-card-body">
-
                                 <div class="form-group">
-          
                                         <form action="{% url 'weight_log' %}" method="POST">
                                             {% csrf_token %}
                                             <div class="form-group">
@@ -99,18 +85,14 @@
                                                 </div>
                                             </div>
                                         </form>
-
                                     </div>
-
                                 </div>
                             </div>
-
                             <div class="card mb-4" id="food-log-card-lg">
                                 <div class="card-header">
                                     <h4 class="mb-0" id="calories-per-h5">Weight Log</h4>
                                 </div>
                                 <div class="card-body">
-
                                     <table id="weightable" class="table">
                                         <thead>
                                             <tr>
@@ -136,12 +118,9 @@
                                             {% endfor %}
                                         </tbody>
                                     </table>
-
                                 </div>
                             </div>
-                            
                         </div>
-                        
                         <div class="col-12 col-lg-6">
                             <div class="card" id="food-log-card-op">
                                 <div class="card-header">
@@ -154,11 +133,9 @@
                                 </div>
                             </div>
                         </div>
-                        
                     </div>
             </div>
         </div>
-
     </div>
 </div>    
 {% endblock %}
