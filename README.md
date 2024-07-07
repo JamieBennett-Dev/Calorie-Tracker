@@ -148,7 +148,7 @@ The combination of blue and raspberry forms a harmonious contrast, complemented 
 
 The result is a thoughtfully curated color palette that enriches the design with sophistication and vibrancy while preserving its elegance.
 
-## Validation Test
+## Validation Testing
 
 ### CSS Validation
 
