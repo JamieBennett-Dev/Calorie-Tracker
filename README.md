@@ -152,13 +152,13 @@ The result is a thoughtfully curated color palette that enriches the design with
 
 ### HTML Validation
 
-**templates/categories.html**
-
 **templates/delete_food.html** No errors upon first entry 🎉:
 
 ![Screenshot](static/images/ct-htmldeletefoodvalidation.png)
 
-**templates/food_add.html**
+**templates/food_add.html** No errors upon first entry 🎉:
+
+![Screenshot](static/images/ct-htmlfoodaddvalidation.png)
 
 **templates/food_category.html**
 
