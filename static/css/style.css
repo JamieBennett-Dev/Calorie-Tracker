@@ -525,6 +525,11 @@ h4 strong {
     background-color: #E00061;
 }
 
+#food_consumed {
+    background-color: #FFF !important;
+    border: 2px solid #141414 !important;
+}
+
 /* ----------food_log_delete.html Styles---------- */
 #page-h1-delete {
     font-family: "Lilita One", sans-serif;

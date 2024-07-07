@@ -104,13 +104,14 @@ Register:
 - Are able to access their personal profile
 - Are able to log out
 
-**Add images of pages for logged in users** 🛑
-
 User Profile:
 ![Screenshot](static/images/ct-userprofile2.png)
 
 Food Categories:
 ![Screenshot](static/images/ct-foodcategory.png)
+
+Food Log: (FIX RESPONSIVE ISSUE BEFORE FINAL SUBMISSION) 🛑
+![Screenshot](static/images/ct-foodlog.png) 
 
 ## Design Choices
 ### Colours
