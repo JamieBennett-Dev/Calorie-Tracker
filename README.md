@@ -182,7 +182,9 @@ The result is a thoughtfully curated color palette that enriches the design with
 
 ![Screenshot](static/images/ct-htmlloginvalidation.png)
 
-**templates/register.html**
+**templates/register.html** Multiple errors upon first entry, all regarding an ID being used more than once:
+
+![Screenshot](static/images/ct-htmlregistervalidation.png)
 
 **templates/update_food.html**
 
