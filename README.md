@@ -106,7 +106,7 @@ Login:
 **Add images of pages for logged in users** 🛑
 
 User Profile:
-![Screenshot](static/images/ct-userprofile.png)
+![Screenshot](static/images/ct-userprofile2.png)
 
 ## Design Choices
 ### Colours

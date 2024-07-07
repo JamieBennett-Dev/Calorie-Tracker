@@ -553,6 +553,11 @@ h4 strong {
     font-family: "Lilita One", sans-serif;
 }
 
+#date, #weight {
+    background-color: #FFF;
+    border: 2px solid #141414;
+}
+
 /* ----------delete_food.html Styles---------- */
 #food-log-card-delete {
     background-color: rgba(255, 0, 0, 0.1);
