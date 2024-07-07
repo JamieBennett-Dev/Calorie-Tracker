@@ -156,13 +156,15 @@ The result is a thoughtfully curated color palette that enriches the design with
 
 **templates/delete_food.html** No errors upon first entry 🎉:
 
-![screenshot](static/images/ct-htmldeletefoodvalidation.png)
+![Screenshot](static/images/ct-htmldeletefoodvalidation.png)
 
 **templates/food_add.html**
 
 **templates/food_category.html**
 
-**templates/food_log_delete.html**
+**templates/food_log_delete.html** No errors upon first entry 🎉:
+
+![Screenshot](static/images/ct-htmlfoodlogdeletevalidation.png)
 
 **templates/food_log.html** (FIX RESPONSIVE ISSUE BEFORE FINAL SUBMISSION) 🛑
 
