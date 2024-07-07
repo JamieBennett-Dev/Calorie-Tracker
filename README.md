@@ -170,7 +170,9 @@ The result is a thoughtfully curated color palette that enriches the design with
 
 **templates/food_log.html** (FIX RESPONSIVE ISSUE BEFORE FINAL SUBMISSION) 🛑
 
-**templates/food.html**
+**templates/food.html** Multiple errors upon first entry:
+
+![Screenshot](static/images/ct-htmlfoodvalidation.png)
 
 **templates/index.html**
 
