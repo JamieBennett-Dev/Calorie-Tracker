@@ -119,6 +119,9 @@ Food View:
 Add Food:
 ![Screenshot](static/images/ct-foodadd.png)
 
+Update Food:
+![Screenshot](static/images/ct-updatefood.png)
+
 ## Design Choices
 ### Colours
 
