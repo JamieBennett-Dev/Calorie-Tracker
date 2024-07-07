@@ -186,7 +186,9 @@ The result is a thoughtfully curated color palette that enriches the design with
 
 ![Screenshot](static/images/ct-htmlregistervalidation.png)
 
-**templates/update_food.html**
+**templates/update_food.html** No errors upon first entry 🎉:
+
+![Screenshot](static/images/ct-htmlupdatefoodvalidation.png)
 
 **templates/user_profile.html**
 
