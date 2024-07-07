@@ -76,9 +76,19 @@ Homepage Wireframe:
 
 ![Screenshot](static/images/ct-wf-homepage.png)
 
+Food Log Wireframe:
+
+![Screenshot](static/images/ct-wf-foodlog.png)
+
+User Profile Wireframe:
+
+![Screenshot](static/images/ct-wf-profile.png)
+
 **All Users:**
 - Are able to view added items
 - Are able to access log in or register
+
+**Add images of pages for logged out users** 🛑
 
 **Logged in Users:**
 - Are able to view items by category
@@ -87,13 +97,7 @@ Homepage Wireframe:
 - Are able to access their personal profile
 - Are able to log out
 
-Logged in users will have a personalised Food Log with their Foods consumed today:
-
-![Screenshot](static/images/ct-wf-foodlog.png)
-
-Logged in users will be able to access their own personal information:
-
-![Screenshot](static/images/ct-wf-profile.png)
+**Add images of pages for logged in users** 🛑
 
 ## Design Choices
 ### Colours
