@@ -94,7 +94,10 @@ Homepage:
 ![Screenshot](static/images/ct-index.png)
 
 Login:
-![Screenshot](static/images/ct-login.png)
+![Screenshot](static/images/ct-login2.png)
+
+Register:
+![Screenshot](static/images/ct-register.png)
 
 **Logged in Users:**
 - Are able to view items by category

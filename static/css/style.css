@@ -194,6 +194,12 @@ footer {
     background-color: rgba(0, 86, 224, 0.2);
     border: 2px solid #0056E0;
     border-radius: 5px;
+    transition: all 0.2s ease;
+}
+
+#register-card-body:hover {
+    background-color: rgba(255,173,209, 0.3);
+    border: 2px solid #E00061;
 }
 
 #register-label {
@@ -211,6 +217,15 @@ footer {
 #register-register-btn:hover {
     background-color: #00CC4E;
     transform: scale(1.05);
+}
+
+#register-card-body:hover #login-register-here {
+    color: #0056E0;
+}
+
+#inputEmail, #inputPassword2 {
+    background-color: #FFF;
+    border: 2px solid #141414;
 }
 
 /* ----------food_add.html Styles---------- */
