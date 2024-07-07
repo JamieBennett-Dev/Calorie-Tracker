@@ -138,6 +138,6 @@ The result is a thoughtfully curated color palette that enriches the design with
 - I got ideas for charts and graphs on [Chart.js](https://www.chartjs.org/).
 - [ChatGPT](https://openai.com/index/chatgpt/) was used for troubleshooting, bug fixing and content generation.
 - [Fontawesome](https://fontawesome.com/) was used for icons.
-- I used two Google fonts, Lilita One and Sarabun.
+- I used two Google fonts, [Lilita-One](https://fonts.google.com/specimen/Lilita+One) and [Sarabun](https://fonts.google.com/specimen/Sarabun).
 - [Balsamiq](https://balsamiq.com/?gad_source=1&gclid=Cj0KCQjw-ai0BhDPARIsAB6hmP6Mb5eLQ-GmH_6RLHGgnC3Ps3wIRQytZzXU2XrksuZ-kLtD9tO3hicaAlgvEALw_wcB) was used to create my Wireframes.
 - The Database diagram was created via [dbdiagram](https://dbdiagram.io/d).
