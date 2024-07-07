@@ -62,7 +62,7 @@
                                             {% csrf_token %}
                                             <div class="form-group">
                                                 <div class="row align-items-center">
-                                                    <div class="col-5">
+                                                    <div class="col-4">
                                                         <label for="date_weight" class="form-label">
                                                             Date
                                                         </label>
@@ -74,25 +74,25 @@
                                                             required
                                                         >
                                                     </div>
-                                                    <div class="col-5">
+                                                    <div class="col-4">
                                                         <label for="weight" class="form-label">
-                                                            Weight (kg)
+                                                            Weight
                                                         </label>
                                                         <input 
                                                             class="form-control"
                                                             type="number" 
                                                             name="weight"
                                                             id="weight"
-                                                            placeholder="0.00" required name="weight" 
+                                                            placeholder="0 (kg)" required name="weight" 
                                                             min="0" 
-                                                            value="0" 
+                                                            value="0 (kg)" 
                                                             step="1" 
                                                             title="Weight" 
                                                             pattern="^\d*(\.\d{0,2})?$"
                                                         >
                                                     </div>
-                                                    <div class="col-2 mt-2">
-                                                        <button type="submit" class="btn mt-4 border-0 text-white" id="save">
+                                                    <div class="col-3 mt-2">
+                                                        <button type="submit" class="btn mt-4 text-white" id="save">
                                                             Add
                                                         </button>
                                                     </div>
@@ -114,7 +114,7 @@
                                     <table id="weightable" class="table">
                                         <thead>
                                             <tr>
-                                                <th scope="col" class="col-md-4">Weight in kg</th>
+                                                <th scope="col" class="col-md-4">Weight (kg)</th>
                                                 <th scope="col" class="col-md-4">Date</th>
                                                 <th scope="col" class="col-md-4"></th>
                                             </tr>
