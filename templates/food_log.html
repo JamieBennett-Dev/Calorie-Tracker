@@ -10,19 +10,15 @@
 </div>
 <div>
     <div class="container-fluid">
-
         <div class="row justify-content-center">
             <div class="col-12">
-                
                     <div class="row">
                         <div class="col-12 col-lg-6">
-
                             <div class="card mb-4" id="food-log-card">
                                 <div class="card-header">
                                     <h4 id="calories-per-h5" class="mb-0">Select food to add to the Food Log</h4>
                                 </div>
                                 <div class="card-body">
-
                                     <div class="form-group">
                                         <form method="POST">
                                             {% csrf_token %}
@@ -46,18 +42,14 @@
                                             </div>
                                         </form>
                                     </div>
-
                                 </div>
                             </div>
-
                             <div class="card mb-4 fs-6" id="food-log-card-lg">
-
                                 <div class='card-header'>
                                     <h4 id="calories-per-h5" class="mb-0">Food consumed today</h4>
                                     <h5 id="calories-per-h5" class="mb-0">{% now 'D, jS F Y' %}</h5>
                                 </div>
                                 <div class="card-body">
-
                                     <table id="foodtable" class="table table-hover">
                                         <thead>
                                             <tr>
@@ -94,20 +86,15 @@
                                             </tr>
                                         </tbody>
                                     </table>
-                                    
                                 </div>
                             </div>
-                            
                         </div>
-                        
                         <div class="col-12 col-lg-6">
-
                             <div class="card mb-4" id="food-log-card-op">
                                 <div class="card-header">
                                     <h4 id="calories-per-h5" class="mb-0">Daily Calorie Goal - <strong>2,000 calories</strong></h4>
                                 </div>
                                 <div class="card-body justify-content-center">
-
                                     <div class="progress" style="height: 40px;">
                                         <div 
                                             id="progressBar"
@@ -119,10 +106,8 @@
                                             style="width: 0%; font-size: 25px;"
                                         >0%</div>
                                     </div>
-
                                 </div>
                             </div>
-
                             <div class="card mb-4" id="food-log-card-op">
                                 <div class="card-header">
                                     <h4 id="calories-per-h5" class="mb-0">Macronutrients Breakdown</h4>
@@ -134,23 +119,18 @@
                                 </div>
                             </div>
                         </div>
-                        
                     </div>
             </div>
         </div>
-
     </div>
 </div>    
 {% endblock %}
-
 {% block script %}
     <!-- Page level plugins -->    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
     <!-- Page level custom scripts -->
     <script src="{% static 'js/foodLog.js' %}"></script>
-
     <!-- BootStrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 {% endblock %}
