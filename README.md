@@ -93,6 +93,9 @@ User Profile Wireframe:
 Homepage:
 ![Screenshot](static/images/ct-index.png)
 
+Login:
+![Screenshot](static/images/ct-login.png)
+
 **Logged in Users:**
 - Are able to view items by category
 - Are able to add new items
