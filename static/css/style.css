@@ -280,6 +280,11 @@ footer {
     color: #FFF;
 }
 
+#id_food_name, #id_quantity, #id_calories, #id_fat, #id_carbohydrates, #id_protein, #id_category, #id_form-0-image {
+    background-color: #FFF;
+    border: 2px solid #141414;
+}
+
 /* ----------food.html Styles---------- */
 #go-back-btn {
     font-family: "Lilita One";

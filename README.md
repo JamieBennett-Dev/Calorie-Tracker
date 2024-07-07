@@ -116,6 +116,9 @@ Food Log: (FIX RESPONSIVE ISSUE BEFORE FINAL SUBMISSION) 🛑
 Food View:
 ![Screenshot](static/images/ct-foods.png)
 
+Add Food:
+![Screenshot](static/images/ct-foodadd.png)
+
 ## Design Choices
 ### Colours
 
