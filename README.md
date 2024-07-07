@@ -2,10 +2,10 @@
 
 ## Introduction
 
-Welcome to the Calorie Tracker App! This application is designed to help you monitor your daily calorie intake and manage your nutritional goals effectively.
+👋 Welcome to the Calorie Tracker App! This application is designed to help you monitor your daily calorie intake and manage your nutritional goals effectively.
 
 
-Whether you're looking to lose weight, maintain a healthy diet, or simply track your food consumption, our app provides you with the tools you need.
+🎯 Whether you're looking to lose weight, maintain a healthy diet, or simply track your food consumption, our app provides you with the tools you need.
 
 ![Screenshot](static/images/ct-main.png)
 
@@ -74,7 +74,7 @@ This site is fully responsive and accessible on mboile, tablet and desktop devic
 
 Homepage Wireframe:
 
-**homepage wireframe here**
+**homepage wireframe here** 🛑
 
 **All Users:**
 - Are able to view added items
@@ -89,11 +89,11 @@ Homepage Wireframe:
 
 Logged in users will have a personalised Food Log with their Foods consumed today:
 
-**food log page wireframe here**
+**food log page wireframe here** 🛑
 
 Logged in users will be able to access their own personal information:
 
-**user profile page wireframe here**
+**user profile page wireframe here** 🛑
 
 ## Design Choices
 ### Colours
@@ -109,7 +109,8 @@ The combination of blue and raspberry forms a harmonious contrast, complemented 
 The result is a thoughtfully curated color palette that enriches the design with sophistication and vibrancy while preserving its elegance.
 
 ## Validation Test
-**Validation testing images go here**
+
+**Validation testing images go here** 🛑
 
 ## Technologies Used
 
