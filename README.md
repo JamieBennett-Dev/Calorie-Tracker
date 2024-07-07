@@ -160,7 +160,9 @@ The result is a thoughtfully curated color palette that enriches the design with
 
 ![Screenshot](static/images/ct-htmlfoodaddvalidation.png)
 
-**templates/food_category.html**
+**templates/food_category.html** 1 error upon entry:
+
+![Screenshot](static/images/ct-htmlfoodcategoryvalidation.png)
 
 **templates/food_log_delete.html** No errors upon first entry 🎉:
 
