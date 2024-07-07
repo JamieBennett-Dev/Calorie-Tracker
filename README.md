@@ -70,15 +70,25 @@ I used Github projects to convert my user stories into actionable tasks. The acc
 ## Design
 ### Wireframes and Features
 
-This site is fully responsive and accessible on mboile, tablet and desktop devices.
+This site is fully responsive and accessible on mobile, tablet and desktop devices.
 
 Homepage Wireframe:
 
-**homepage wireframe here** 🛑
+![Screenshot](static/images/ct-wf-homepage.png)
+
+Food Log Wireframe:
+
+![Screenshot](static/images/ct-wf-foodlog.png)
+
+User Profile Wireframe:
+
+![Screenshot](static/images/ct-wf-profile.png)
 
 **All Users:**
 - Are able to view added items
 - Are able to access log in or register
+
+**Add images of pages for logged out users** 🛑
 
 **Logged in Users:**
 - Are able to view items by category
@@ -87,13 +97,7 @@ Homepage Wireframe:
 - Are able to access their personal profile
 - Are able to log out
 
-Logged in users will have a personalised Food Log with their Foods consumed today:
-
-**food log page wireframe here** 🛑
-
-Logged in users will be able to access their own personal information:
-
-**user profile page wireframe here** 🛑
+**Add images of pages for logged in users** 🛑
 
 ## Design Choices
 ### Colours
@@ -117,8 +121,9 @@ The result is a thoughtfully curated color palette that enriches the design with
 - HTML.
 - CSS.
 - Bootstrap.
+- JavaScript.
 - Python.
-- BootStrap.
+- Django.
 - PostgreSQL Database.
 
 - GitPod development environment used.
@@ -132,10 +137,11 @@ The result is a thoughtfully curated color palette that enriches the design with
 
 ## Credits
 
-- I got various ideas from different projects using this site:
-https://github.com/topics/calories-tracker.
-- ChatGPT was used for troubleshooting, bug fixing and content generation.
-- Fontawesome was used for icons.
-- Two Google fonts.
-- Balsamiq Wireframes.
-- Database diagram created via [dbdiagram](https://dbdiagram.io/d).
+- I got various ideas from different projects on GitHub [here](https://github.com/topics/calories-tracker).
+- I used a Favicon I found on Google [here](https://www.google.com/search?sca_esv=5253a18b766cf5c0&sxsrf=ADLYWILTbik0GwE4j9HATDwkyEsPvy9d8w:1720365503275&q=calorie+calculator+logo&udm=2&fbs=AEQNm0Aa4sjWe7Rqy32pFwRj0UkWd8nbOJfsBGGB5IQQO6L3J_86uWOeqwdnV0yaSF-x2jo6Ttnu6iRjjgGjARfLolnBYg2tMdxbJFpG2a0dg6n0NSOUeL_Zp-ANwJjueSBq_UoE1Rqmx1qtxWQlddKd0bEv4-fvXrL1UXtmb7rYJIBkr79X849_zmlFz-2AGdL47Zwhhols&sa=X&ved=2ahUKEwj1n9P1nJWHAxWNVUEAHdffAt0QtKgLegQIDxAB&biw=1536&bih=695&dpr=1.25#vhid=pA5LQEXfUDD7oM&vssid=mosaic).
+- I got ideas for charts and graphs on [Chart.js](https://www.chartjs.org/).
+- [ChatGPT](https://openai.com/index/chatgpt/) was used for troubleshooting, bug fixing and content generation.
+- [Fontawesome](https://fontawesome.com/) was used for icons.
+- I used two Google fonts, [Lilita-One](https://fonts.google.com/specimen/Lilita+One) and [Sarabun](https://fonts.google.com/specimen/Sarabun).
+- [Balsamiq](https://balsamiq.com/?gad_source=1&gclid=Cj0KCQjw-ai0BhDPARIsAB6hmP6Mb5eLQ-GmH_6RLHGgnC3Ps3wIRQytZzXU2XrksuZ-kLtD9tO3hicaAlgvEALw_wcB) was used to create my Wireframes.
+- The Database diagram was created via [dbdiagram](https://dbdiagram.io/d).
