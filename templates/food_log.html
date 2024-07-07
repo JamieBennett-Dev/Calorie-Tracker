@@ -35,7 +35,7 @@
                                                     </div>
                                                     <div class="col-4">
                                                         <button type="submit" class="btn text-white" id="save">
-                                                            Add Food
+                                                            Add
                                                         </button>
                                                     </div>
                                                 </div>
@@ -50,42 +50,44 @@
                                     <h5 id="calories-per-h5" class="mb-0">{% now 'D, jS F Y' %}</h5>
                                 </div>
                                 <div class="card-body">
-                                    <table id="foodtable" class="table table-hover">
-                                        <thead>
-                                            <tr>
-                                                <th scope="col" class="col-md-2" id="table-header">Food Item</th>
-                                                <th scope="col" class="col-md-2" id="table-header">Calories</th>
-                                                <th scope="col" class="col-md-2" id="table-header">Fat (g) in 100g</th>
-                                                <th scope="col" class="col-md-2" id="table-header">Carbs (g) in 100g</th>
-                                                <th scope="col" class="col-md-2" id="table-header">Protein (g) in 100g</th>
-                                                <th scope="col" class="col-md-2" id="table-header"></th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                        {% for food_item in user_food_log %}
-                                            <tr>
-                                                <td class="col-md-2">{{ food_item.food_consumed.food_name }}</td>
-                                                <td class="col-md-2">{{ food_item.food_consumed.calories }}</td>
-                                                <td class="col-md-2">{{ food_item.food_consumed.fat }}</td>
-                                                <td class="col-md-2">{{ food_item.food_consumed.carbohydrates }}</td>
-                                                <td class="col-md-2">{{ food_item.food_consumed.protein }}</td>   
-                                                <td>
-                                                    <a class="btn btn-danger border-0" href="{% url 'food_log_delete' food_item.id %}">
-                                                        <i class="fas fa-trash-alt"></i>
-                                                    </a>
-                                                </td>
-                                            </tr>
-                                        {% endfor %}
-                                            <tr id="table-header">
-                                                <td id="foodName" class="col-md-2"><b>Total</b></td>
-                                                <td id="totalCalories" class="col-md-2"><b></b></td>
-                                                <td id="totalFat" class="col-md-2"><b></b></td>
-                                                <td id="totalCarbohydrates" class="col-md-2"><b></b></td>
-                                                <td id="totalProtein" class="col-md-2"><b></b></td>
-                                                <td></td>     
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                                    <div class="table-responsive">
+                                        <table id="foodtable" class="table table-hover">
+                                            <thead class="thead-dark">
+                                                <tr>
+                                                    <th scope="col">Food Item</th>
+                                                    <th scope="col">Calories</th>
+                                                    <th scope="col">Fat (g) in 100g</th>
+                                                    <th scope="col">Carbs (g) in 100g</th>
+                                                    <th scope="col">Protein (g) in 100g</th>
+                                                    <th scope="col"></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                {% for food_item in user_food_log %}
+                                                <tr>
+                                                    <td>{{ food_item.food_consumed.food_name }}</td>
+                                                    <td>{{ food_item.food_consumed.calories }}</td>
+                                                    <td>{{ food_item.food_consumed.fat }}</td>
+                                                    <td>{{ food_item.food_consumed.carbohydrates }}</td>
+                                                    <td>{{ food_item.food_consumed.protein }}</td>
+                                                    <td>
+                                                        <a class="btn btn-danger border-0" href="{% url 'food_log_delete' food_item.id %}">
+                                                            <i class="fas fa-trash-alt"></i>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                                {% endfor %}
+                                                <tr>
+                                                    <td><b>Total</b></td>
+                                                    <td id="totalCalories"></td>
+                                                    <td id="totalFat"></td>
+                                                    <td id="totalCarbohydrates"></td>
+                                                    <td id="totalProtein"></td>
+                                                    <td></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
                         </div>
