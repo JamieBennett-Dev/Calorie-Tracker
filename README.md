@@ -152,13 +152,35 @@ The result is a thoughtfully curated color palette that enriches the design with
 
 ### HTML Validation
 
-**templates/weight_log_delete.html** No errors upon first entry 🎉:
-
-![Screenshot](static/images/ct-htmlweightlogdeletevalidation.png)
+**templates/categories.html**
 
 **templates/delete_food.html** No errors upon first entry 🎉:
 
 ![screenshot](static/images/ct-htmldeletefoodvalidation.png)
+
+**templates/food_add.html**
+
+**templates/food_category.html**
+
+**templates/food_log_delete.html**
+
+**templates/food_log.html** (FIX RESPONSIVE ISSUE BEFORE FINAL SUBMISSION) 🛑
+
+**templates/food.html**
+
+**templates/index.html**
+
+**templates/login.html**
+
+**templates/register.html**
+
+**templates/update_food.html**
+
+**templates/user_profile.html**
+
+**templates/weight_log_delete.html** No errors upon first entry 🎉:
+
+![Screenshot](static/images/ct-htmlweightlogdeletevalidation.png)
 
 ### CSS Validation
 
