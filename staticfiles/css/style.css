@@ -1,0 +1,601 @@
+/* ----------Google Fonts---------- */
+/* "Sarabun" - Main text */ @import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+/* "Lilita One" - Headers etc. */ @import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Rubik+Mono+One&display=swap');
+
+/* ----------Colour Pallet---------- */
+/*
+#0056E0 - Blue
+#00173D - Dark Blue
+#ADCDFF - Light Blue
+
+#E00061 - Raspberry
+#3D001B - Dark Raspberry
+#FFADD1 - Light Raspberry
+
+#FF0000 - Red
+#00CC4E - Green
+
+#141414 - Off Black
+#F5F5F5 - Off White
+*/
+
+/* ----------Main styles---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}  
+
+body {
+    background-color: #f1f1f1;
+}
+
+/* ----------Navbar Styles---------- */
+nav {
+    background-color: #0056E0;
+    font-family: "Lilita One", sans-serif;
+}
+
+nav i {
+    color: #ADCDFF;
+    text-shadow: -0.5px -0.5px 0 #00173D, 0.5px -0.5px 0 #00173D, -0.5px 0.5px 0 #00173D, 0.5px 0.5px 0 #00173D;
+}
+
+.navbar-toggler {
+    color: #00173D;
+    border: 2px solid #00173D;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.badge {
+    background-color: #E00061 !important;
+}
+
+/* ----------Footer Styles---------- */
+footer {
+    font-family: "Lato", sans-serif;
+    font-weight: bolder;
+}
+
+/* ----------Custom Scrollbar Styles---------- */
+::-webkit-scrollbar {
+    width: 0.6em;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #3D001B;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #E00061;
+    border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #FFADD1;
+}
+
+/* ----------Main Content, base.html and index.html Styles---------- */
+#page-h1 {
+    font-family: "Lilita One", sans-serif;
+    color: #0056E0;
+    text-shadow: -0.5px -0.5px 0 #00173D, 0.5px -0.5px 0 #00173D, -0.5px 0.5px 0 #00173D, 0.5px 0.5px 0 #00173D;
+}
+
+#page-h1 i {
+    color: #ADCDFF;
+    text-shadow: -0.5px -0.5px 0 #00173D, 0.5px -0.5px 0 #00173D, -0.5px 0.5px 0 #00173D, 0.5px 0.5px 0 #00173D;
+}
+
+#index-card-body {
+    background-color: rgba(0, 86, 224, 0.2);
+    transition: all 0.2s ease;
+    border: 2px solid #0056E0;
+    border-radius: 5px;
+    height: 205px;
+}
+
+#index-card-body:hover {
+    background-color: rgba(255,173,209, 0.3);
+    border: 2px solid #E00061;
+}
+
+#index-card-body:hover #view-details {
+    color: #0056E0;
+}
+
+.card-title {
+    font-family: "Lilita One", sans-serif;
+    text-decoration: underline;
+}
+
+.card-text {
+    font-family: "Sarabun", sans-serif;
+}
+
+#view-details {
+    color: #E00061;
+}
+
+#food-list-image {
+    border-radius: 5px;
+    transition: all 0.2s ease;
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+#food-list-image:hover {
+    transform: scale(1.05);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#page-toggle {
+    font-family: "Lilita One", sans-serif;
+}
+
+/* ----------login.html Styles---------- */
+#login-label {
+    font-family: "Sarabun", sans-serif;
+    font-weight: bold;
+}
+
+#login-card-body {
+    background-color: rgba(0, 86, 224, 0.2);
+    border: 2px solid #0056E0;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+}
+
+#login-card-body:hover {
+    background-color: rgba(255,173,209, 0.3);
+    border: 2px solid #E00061;
+}
+
+#login-login-btn {
+    font-family: "Lilita One", sans-serif;
+    background-color: #0056E0;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+#login-login-btn:hover {
+    background-color: #00CC4E;
+    transform: scale(1.05);
+}
+
+#account-question {
+    font-family: "Sarabun", sans-serif;
+}
+
+#login-register-here {
+    font-weight: bold;
+    color: #E00061;
+    transition: all 0.2s ease;
+}
+
+#login-card-body:hover #login-register-here {
+    color: #0056E0;
+}
+
+#inputUsername, #inputPassword, #inputPassword1 {
+    background-color: #FFF;
+    border: 2px solid #141414;
+}
+
+/* ----------register.html Styles---------- */
+#register-card-body {
+    background-color: rgba(0, 86, 224, 0.2);
+    border: 2px solid #0056E0;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+}
+
+#register-card-body:hover {
+    background-color: rgba(255,173,209, 0.3);
+    border: 2px solid #E00061;
+}
+
+#register-label {
+    font-family: "Sarabun", sans-serif;
+    font-weight: bold;
+}
+
+#register-register-btn {
+    font-family: "Lilita One", sans-serif;
+    background-color: #0056E0;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+#register-register-btn:hover {
+    background-color: #00CC4E;
+    transform: scale(1.05);
+}
+
+#register-card-body:hover #login-register-here {
+    color: #0056E0;
+}
+
+#inputEmail, #inputPassword2 {
+    background-color: #FFF;
+    border: 2px solid #141414;
+}
+
+/* ----------food_add.html Styles---------- */
+#food_add-h5 {
+    font-family: "Lilita One", sans-serif;
+}
+
+#food-log-card-success {
+    background-color: rgba(0,204,78, 0.2);
+    border: 2px solid #00CC4E;
+    border-radius: 5px;
+    font-family: "Sarabun", sans-serif;
+    transition: all 0.2s ease;
+}
+
+#food-log-card-success:hover {
+    background-color: rgba(0,204,78, 0.3);
+}
+
+#food_add-card-body {
+    background-color: rgba(0, 86, 224, 0.2);
+    border: 2px solid #0056E0;
+    border-radius: 5px;
+    font-family: "Sarabun", sans-serif;
+    font-weight: bold;
+}
+
+#save {
+    font-family: "Lilita One";
+    background-color: #00CC4E;
+    font-weight: normal;
+    transition: all 0.2s ease;
+    border: 2px solid #00CC4E;
+}
+
+#save:hover {
+    background-color: #00CC4E;
+    border: 2px solid #00CC4E;
+    transform: scale(1.05);
+}
+
+#cancel {
+    font-family: "Lilita One", sans-serif;
+    color: #FF0000;
+    border: 2px solid #FF0000;
+    transition: all 0.2s ease;
+}
+
+#cancel:hover {
+    background-color: #FF0000;
+    transform: scale(1.05);
+    color: #FFF;
+}
+
+#id_food_name, #id_quantity, #id_calories, #id_fat, #id_carbohydrates, #id_protein, #id_category, #id_form-0-image {
+    background-color: #FFF;
+    border: 2px solid #141414;
+}
+
+/* ----------food.html Styles---------- */
+#go-back-btn {
+    font-family: "Lilita One";
+    color: #E00061;
+    border: 2px solid #E00061;
+    transition: all 0.2s ease;
+}
+
+#go-back-btn:hover {
+    background-color: #E00061;
+    transform: scale(1.05);
+    color: #FFF;
+}
+
+#delete-btn {
+    font-family: "Lilita One", sans-serif;
+    color: #FF0000;
+    border: 2px solid #FF0000;
+    transition: all 0.2s ease;
+}
+
+#delete-btn:hover {
+    background-color: #FF0000;
+    transform: scale(1.05);
+    color: #FFF;
+}
+
+#update-btn {
+    font-family: "Lilita One", sans-serif;
+    color: #00CC4E;
+    border: 2px solid #00CC4E;
+    transition: all 0.2s ease;
+}
+
+#update-btn:hover {
+    background-color: #00CC4E;
+    transform: scale(1.05);
+    color: #FFF;
+}
+
+#food-html-img {
+    border-radius: 5px;
+    transition: all 0.2s ease;
+    max-height: 650px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+#food-html-img:hover {
+    border-radius: 5px;
+    transform: scale(1.025);
+}
+
+#calories-per-100g-chart {
+    background-color: rgba(0, 86, 224, 0.2);
+    color: #141414;
+    border: 2px solid #0056E0;
+    border-radius: 5px;
+    font-family: "Sarabun", sans-serif;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+#calories-per-100g-chart:hover {
+    background-color: rgba(255,173,209, 0.3);
+    border: 2px solid #E00061;
+}
+
+#calories-per-h5 {
+    font-family: "Lilita One", sans-serif;
+    text-decoration: none;
+}
+
+#calories-per-text {
+    font-family: "Sarabun", sans-serif;
+}
+
+#macronutrients-chart {
+    background-color: rgba(255,173,209, 0.3);
+    border: 2px solid #E00061;
+    color: #141414;
+    border-radius: 5px;
+    font-family: "Sarabun", sans-serif;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+
+#macronutrients-chart:hover {
+    background-color: rgba(0, 86, 224, 0.2);
+    border: 2px solid #0056E0;
+}
+
+#chart-subtitle {
+    color: #707070;
+    font-family: "Sarabun", sans-serif;
+}
+
+/* ----------Next Page Styles---------- */
+.page-item {
+    margin: 0 3px;
+}
+
+.page-item .page-link {
+    color: #E00061;
+    background-color: #FFF;
+    border: 2px solid #E00061;
+    padding: 0.25rem 1rem;
+    transition: all 0.2s ease;
+    font-size: larger;
+}
+
+.page-item .page-link:hover {
+    transform: scale(1.05);
+}
+
+.page-item.active .page-link {
+    z-index: 1;
+    color: #FFF;
+    background-color: #E00061;
+    border: 2px solid #E00061;
+}
+
+.page-item.disabled .page-link {
+    color: #707070;
+    pointer-events: none;
+    cursor: not-allowed;
+    background-color: #D3D3D3;
+    border-color: #D3D3D3;
+}
+
+/* ----------food_log.html Styles---------- */
+#food-log-card {
+    background-color: rgba(0, 86, 224, 0.2);
+    border: 2px solid #0056E0;
+    border-radius: 5px;
+    font-family: "Sarabun", sans-serif;
+    transition: all 0.2s ease;
+}
+
+#food-log-card:hover {
+    background-color: rgba(255,173,209, 0.3);
+    border: 2px solid #E00061;
+}
+
+#food-log-card-lg {
+    background-color: rgba(0, 86, 224, 0.2);
+    border: 2px solid #0056E0;
+    border-radius: 5px;
+    font-family: "Sarabun", sans-serif;
+    transition: all 0.2s ease;
+}
+
+#food-log-card-lg:hover {
+    background-color: rgba(255,173,209, 0.3);
+    border: 2px solid #E00061;
+}
+
+#food-log-card-lg h5 {
+    font-weight: normal;
+    color: #E00061;
+    transition: all 0.2s ease;
+}
+
+#food-log-card-lg:hover h5 {
+    font-weight: normal;
+    color: #0056E0;
+}
+
+#table-header {
+    font-family: "Sarabun", sans-serif;
+    font-weight: bolder;
+}
+
+#foodtable {
+    border: 2px solid #E00061;
+    transition: all 0.2s ease;
+    font-family: "Sarabun", sans-serif;
+}
+
+#food-log-card-lg:hover #foodtable {
+    border: 2px solid #0056E0;
+}
+
+.btn-danger {
+    color: #FFF;
+    background-color: rgba(255, 0, 0, 0.6);
+    transition: all 0.2s ease;
+}
+
+.btn-danger:hover {
+    transform: scale(1.05);
+    background-color: rgba(255, 0, 0, 0.8);
+    color: #FFF;
+}
+
+#foodtable th, #foodtable td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#food-log-card-op {
+    background-color: rgba(255,173,209, 0.3);
+    border: 2px solid #E00061;
+    border-radius: 5px;
+    font-family: "Sarabun", sans-serif;
+    transition: all 0.2s ease;
+}
+
+#food-log-card-op:hover {
+    background-color: rgba(0, 86, 224, 0.2);
+    border: 2px solid #0056E0;
+}
+
+h4 strong {
+    font-weight: normal;
+    color: #0056E0;
+    transition: all 0.2s ease;
+}
+
+#food-log-card-op:hover h4 strong {
+    font-weight: normal;
+    color: #E00061;
+}
+
+.progress {
+    background-color: #FFF;
+    border: 2px solid #E00061;
+    transition: all 0.2s ease;
+}
+
+#food-log-card-op:hover .progress {
+    border: 2px solid #0056E0;
+}
+
+.progress-bar {
+    background-color: #0056E0;
+    font-family: "Lilita One", sans-serif;
+}
+
+#food-log-card-op:hover .progress-bar {
+    transition: all 0.2s ease;
+    background-color: #E00061;
+}
+
+#food_consumed {
+    background-color: #FFF !important;
+    border: 2px solid #141414 !important;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+/* ----------food_log_delete.html Styles---------- */
+#page-h1-delete {
+    font-family: "Lilita One", sans-serif;
+    color: #FF0000;
+    text-shadow: -0.5px -0.5px 0 #00173D, 0.5px -0.5px 0 #00173D, -0.5px 0.5px 0 #00173D, 0.5px 0.5px 0 #00173D;
+}
+
+/* ----------user_profile.html Styles---------- */
+#username {
+    color: #E00061;
+    transition: all 0.2s ease;
+}
+
+#food-log-card-lg:hover #username {
+    color: #0056E0;
+}
+
+#user-card-body {
+    font-family: "Sarabun", sans-serif;
+}
+
+#weightable {
+    border: 2px solid #E00061;
+    transition: all 0.2s ease;
+    font-family: "Sarabun", sans-serif;
+}
+
+#food-log-card-lg:hover #weightable {
+    border: 2px solid #0056E0;
+}
+
+#weightable th, #weightable td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#add-btn {
+    background-color: rgba(0,204,78, 0.2);
+    border: 2px solid #00CC4E;
+    color: #141414;
+    font-family: "Lilita One", sans-serif;
+}
+
+#date, #weight {
+    background-color: #FFF;
+    border: 2px solid #141414;
+}
+
+/* ----------delete_food.html Styles---------- */
+#food-log-card-delete {
+    background-color: rgba(255, 0, 0, 0.1);
+    border: 2px solid #FF0000;
+    border-radius: 5px;
+    font-family: "Sarabun", sans-serif;
+    transition: all 0.2s ease;
+}
+
+#food-log-card-delete:hover {
+    background-color: rgba(255, 0, 0, 0.2);
+}
