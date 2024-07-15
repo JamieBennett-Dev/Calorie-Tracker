@@ -33,7 +33,7 @@ class Food(models.Model):
 
 class Image(models.Model):
     food = models.ForeignKey(Food, on_delete=models.CASCADE, related_name='get_images')
-    image = models.ImageField(upload_to='images/')
+    image = models.ImageField(upload_to='static/images/')
 
     def __str__(self):
         return f'{self.image}'
