@@ -1,6 +1,5 @@
 from django.contrib.auth.models import AbstractUser
 from django.db import models
-from cloudinary.models import CloudinaryField
 
 class User(AbstractUser):
     def __str__(self):
@@ -34,7 +33,7 @@ class Food(models.Model):
 
 class Image(models.Model):
     food = models.ForeignKey(Food, on_delete=models.CASCADE, related_name='get_images')
-    image = CloudinaryField('image', default='placeholder')
+    image = models.ImageField(upload_to='images/')
 
     def __str__(self):
         return f'{self.image}'
