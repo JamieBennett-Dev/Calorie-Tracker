@@ -47,6 +47,10 @@ INSTALLED_APPS = [
     
     # local
     'foodtracker',
+
+    #cloudinary
+    'cloudinary_storage',
+    'cloudinary',
 ]
 
 MIDDLEWARE = [
