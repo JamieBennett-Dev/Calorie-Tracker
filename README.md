@@ -216,6 +216,32 @@ In conclusion, the CSS validation testing for my first solo Django project has b
 
 Linking to the issues identified in the HTML validation, such as IDs being used more than once, it's clear that while there were structural issues in the HTML, the CSS was implemented correctly. This outcome not only boosts my confidence in my current project but also excites me about my future in web development. With a strong foundation in CSS, I am well-equipped to tackle more complex styling challenges in upcoming projects. Learning from these experiences will ensure more efficient and error-free coding moving forward.
 
+### JavaScript Validation
+
+**static/js/foodDetails.js** Eight warnings upon first entry:
+
+![Screenshot](static/images/foodDetails.jsval.png)
+
+**static/js/foodLog.js** Eleven warnings upon first entry:
+
+![Screenshot](static/images/foodLog.js.png)
+
+**static/js/foods.js** Two warnings upon first entry:
+
+![Screenshot](static/images/foods.js.png)
+
+**static/js/userProfile.js** Eight Warnings upon first entry:
+
+![Screenshot](static/images/userProfile.js.png)
+
+### JavaScript Validation Conclusion
+
+In conclusion, this JavaScript validation testing has been a crucial learning experience for my first solo Django project. The primary reasons for the errors identified were the usage of const and let keywords, and the spread operator, which are only available in ES6 or Mozilla JS extensions. By identifying these issues, I have not only improved the quality and robustness of my future projects but also gained valuable insights into best practices for JavaScript version compatibility and coding standards. Learning from these mistakes will undoubtedly benefit me in my future web development endeavors, ensuring more efficient and error-free coding.
+
+### Python Validation
+
+### Python Validation Conclusion
+
 ## Technologies Used
 
 - HTML.
