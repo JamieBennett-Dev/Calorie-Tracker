@@ -10,7 +10,7 @@
             <div class="card mb-3 border-0">
                 <!-- Food image -->
                 <a href="{% url 'food_details' food.id %}">
-                    <img src="{{ food.image.image.url|default:'../static/images/no_image.png' }}" class="img-fluid"
+                    <img src="{{ food.images.first.image_url|default:'../static/images/no_image.png' }}" class="img-fluid"
                         alt="food image" id="food-list-image">
                 </a>
                 <div class="card-body" id="index-card-body">
@@ -77,9 +77,6 @@
             </ul>
         </div>
         {% endif %}
-    </div>
-    <div>
-        <img src="https://raw.githubusercontent.com/JamieBennett-Dev/Calorie-Tracker/main/media/images/orange-juice_7MwrdL8.jpg" alt="">
     </div>
 </div>
 {% endblock %}

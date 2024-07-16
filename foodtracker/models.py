@@ -21,11 +21,11 @@ class FoodCategory(models.Model):
 
 class Food(models.Model):
     food_name = models.CharField(max_length=200)
-    quantity = models.DecimalField(max_digits=7, decimal_places=2, default=100.00)
+    quantity = models.DecimalField(max_digits=7, decimal_places=2, default=100)
     calories = models.IntegerField(default=0)
-    fat = models.DecimalField(max_digits=7, decimal_places=2)
-    carbohydrates = models.DecimalField(max_digits=7, decimal_places=2)
-    protein = models.DecimalField(max_digits=7, decimal_places=2)
+    fat = models.DecimalField(max_digits=7, decimal_places=2, default=0)
+    carbohydrates = models.DecimalField(max_digits=7, decimal_places=2, default=0)
+    protein = models.DecimalField(max_digits=7, decimal_places=2, default=0)
     category = models.ForeignKey(FoodCategory, on_delete=models.CASCADE, related_name='food_category')
 
     def __str__(self):

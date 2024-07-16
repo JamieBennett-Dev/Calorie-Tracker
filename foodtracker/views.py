@@ -77,6 +77,12 @@ def logout_view(request):
     return HttpResponseRedirect(reverse('index'))
 
 
+def convert_github_url(blob_url):
+    raw_url = blob_url.replace('github.com', 'raw.githubusercontent.com')
+    raw_url = raw_url.replace('/blob/', '/')
+    return raw_url
+
+
 def food_list_view(request):
     '''
     It renders a page that displays all food items
@@ -85,7 +91,9 @@ def food_list_view(request):
     foods = Food.objects.all()
 
     for food in foods:
-        food.image = food.get_images.first()
+        food.images = food.get_images.all()
+        for image in food.images:
+            image.image_url = convert_github_url(image.image.url)
 
     # Show 4 food items per page
     page = request.GET.get('page', 1)
