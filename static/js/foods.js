@@ -199,6 +199,6 @@ const foods = [
         'protein': '20',
         'food_category': 'Meats, Fish and Eggs',
     },
-]
+];
   
 export default foods;

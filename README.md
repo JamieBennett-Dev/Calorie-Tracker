@@ -216,6 +216,48 @@ In conclusion, the CSS validation testing for my first solo Django project has b
 
 Linking to the issues identified in the HTML validation, such as IDs being used more than once, it's clear that while there were structural issues in the HTML, the CSS was implemented correctly. This outcome not only boosts my confidence in my current project but also excites me about my future in web development. With a strong foundation in CSS, I am well-equipped to tackle more complex styling challenges in upcoming projects. Learning from these experiences will ensure more efficient and error-free coding moving forward.
 
+### JavaScript Validation
+
+**static/js/foodDetails.js** Eight warnings upon first entry:
+
+![Screenshot](static/images/foodDetails.jsval.png)
+
+**static/js/foodLog.js** Eleven warnings upon first entry:
+
+![Screenshot](static/images/foodLog.js.png)
+
+**static/js/foods.js** Two warnings upon first entry:
+
+![Screenshot](static/images/foods.js.png)
+
+**static/js/userProfile.js** Eight Warnings upon first entry:
+
+![Screenshot](static/images/userProfile.js.png)
+
+### JavaScript Validation Conclusion
+
+In conclusion, this JavaScript validation testing has been a crucial learning experience for my first solo Django project. The primary reasons for the errors identified were the usage of const and let keywords, and the spread operator, which are only available in ES6 or Mozilla JS extensions. By identifying these issues, I have not only improved the quality and robustness of my future projects but also gained valuable insights into best practices for JavaScript version compatibility and coding standards. Learning from these mistakes will undoubtedly benefit me in my future web development endeavors, ensuring more efficient and error-free coding.
+
+### Python Validation
+
+**config/settings.py**
+
+**config/urls.py**
+
+**foodtracker/admin.py**
+
+**foodtracker/forms.py**
+
+**foodtracker/models.py**
+
+**foodtracker/tests.py**
+
+**foodtracker/urls.py**
+
+**foodtracker/views.py**
+
+### Python Validation Conclusion
+
 ## Technologies Used
 
 - HTML.
@@ -233,7 +275,28 @@ Linking to the issues identified in the HTML validation, such as IDs being used 
 
 ## Deployment
 
-- I used [Heroku](https://dashboard.heroku.com/) to deploy my project.
+I used [Heroku](https://dashboard.heroku.com/) to deploy my project.
+
+To deploy to Heroku, I followed these steps:
+
+1. Project Setup: Configured the Django project for production by setting up ALLOWED_HOSTS, static files, and installed necessary dependencies.
+
+2. Heroku Setup: Created a new Heroku application using the Heroku CLI and added the Heroku Git remote to our project.
+
+3. Procfile: Added a Procfile to specify the command to run our app.
+
+4. Database Configuration: Configured the project to use Heroku's PostgreSQL database by updating the DATABASES setting in settings.py.
+
+5. Environment Variables: Set necessary environment variables on Heroku, such as SECRET_KEY and DATABASE_URL, using the Heroku CLI.
+
+6. Static Files: Configured the project to collect and serve static files using whitenoise by updating the MIDDLEWARE and STATICFILES_STORAGE settings.
+
+7. Deployment: Pushed the project to Heroku using Git, triggering Heroku to build and deploy the application.
+
+8. Migrations: Ran database migrations on Heroku to set up the database schema.
+
+9. Application Monitoring: Monitored the application logs using the Heroku CLI to ensure the deployment was successful and the application was running smoothly.
+
 
 ## Credits
 
