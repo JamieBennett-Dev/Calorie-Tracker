@@ -1,6 +1,7 @@
 from django import forms
 from .models import Food, Image, Weight
 
+
 class FoodForm(forms.ModelForm):
     '''
     A ModelForm class for adding a new food item
