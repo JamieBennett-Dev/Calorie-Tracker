@@ -289,7 +289,9 @@ In conclusion, conducting this Python validation testing has been an essential l
 - GitPod development environment used.
 - GitHub used for version control and code hosting.
 - GitHub Projects used for Agile Methodology.
-- W3C for validation testing.
+- W3C for HTML and CSS validation testing.
+- JSHint for JavaScript validation testing.
+- Code Institute Python validator.
 
 ## Deployment
 
