@@ -1,9 +1,11 @@
 from django.contrib.auth.models import AbstractUser
 from django.db import models
 
+
 class User(AbstractUser):
     def __str__(self):
-        return f'{self.username}' # Returns the user their username
+        return f'{self.username}'  # Returns the user their username
+
 
 class FoodCategory(models.Model):
     category_name = models.CharField(max_length=50)
@@ -19,6 +21,7 @@ class FoodCategory(models.Model):
     def count_food_by_category(self):
         return Food.objects.filter(category=self).count()
 
+
 class Food(models.Model):
     food_name = models.CharField(max_length=200)
     quantity = models.DecimalField(max_digits=7, decimal_places=2, default=100.00)
@@ -31,12 +34,14 @@ class Food(models.Model):
     def __str__(self):
         return f'{self.food_name} - category: {self.category}'
 
+
 class Image(models.Model):
     food = models.ForeignKey(Food, on_delete=models.CASCADE, related_name='get_images')
     image = models.ImageField(upload_to='images/')
 
     def __str__(self):
         return f'{self.image}'
+
 
 class FoodLog(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
@@ -48,6 +53,7 @@ class FoodLog(models.Model):
 
     def __str__(self):
         return f'{self.user.username} - {self.food_consumed.food_name}'
+
 
 class Weight(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
