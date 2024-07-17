@@ -18,7 +18,7 @@ urlpatterns = [
     path('categories', views.categories_view, name='categories_view'),
     path('categories/<str:category_name>', views.category_details_view, name='category_details_view'),
 
-    #added
+    # added
     path('food/<int:pk>/update/', views.update_food, name='update_food'),
     path('food/<int:pk>/delete/', views.delete_food, name='delete_food'),
 ]
