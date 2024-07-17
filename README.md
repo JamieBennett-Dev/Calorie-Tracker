@@ -244,7 +244,9 @@ In conclusion, this JavaScript validation testing has been a crucial learning ex
 
 ![Screenshot](static/images/configsettings.py.png)
 
-**config/urls.py**
+**config/urls.py** Two warnings, lines too long:
+
+![Screenshot](static/images/cofigurls.py.png)
 
 **foodtracker/admin.py**
 
