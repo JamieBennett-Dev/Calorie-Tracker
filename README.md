@@ -260,7 +260,9 @@ In conclusion, this JavaScript validation testing has been a crucial learning ex
 
 ![Screenshot](static/images/foodtrackermodels.py.png)
 
-**foodtracker/tests.py**
+**foodtracker/tests.py** One warning upon first entry, line is too long:
+
+![Screenshot](static/images/foodtrackertests.py.png)
 
 **foodtracker/urls.py**
 
