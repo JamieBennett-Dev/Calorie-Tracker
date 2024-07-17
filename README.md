@@ -240,7 +240,9 @@ In conclusion, this JavaScript validation testing has been a crucial learning ex
 
 ### Python Validation
 
-**config/settings.py**
+**config/settings.py**  Five warnings, lines too long:
+
+![Screenshot](static/images/configsettings.py.png)
 
 **config/urls.py**
 
