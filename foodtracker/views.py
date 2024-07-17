@@ -164,7 +164,6 @@ def food_add_view(request):
         })
 
 
-
 @login_required
 def food_log_view(request):
     '''
@@ -305,7 +304,6 @@ def category_details_view(request, category_name):
 @login_required
 def update_food(request, pk):
     food = get_object_or_404(Food, pk=pk)
-    
     if request.method == 'POST':
         form = FoodForm(request.POST, instance=food)
         if form.is_valid():
@@ -314,7 +312,6 @@ def update_food(request, pk):
             return render(request, 'update_food.html', {'form': form, 'food': food, 'success': True})
     else:
         form = FoodForm(instance=food)
-    
     # Render the form normally if it's a GET request or if form is not valid
     return render(request, 'update_food.html', {'form': form, 'food': food})
 
