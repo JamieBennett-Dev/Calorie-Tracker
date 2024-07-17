@@ -240,15 +240,17 @@ In conclusion, this JavaScript validation testing has been a crucial learning ex
 
 ### Python Validation
 
-**config/settings.py**  Five warnings, lines too long:
+**config/settings.py**  Five warnings upon first entry, lines are too long:
 
 ![Screenshot](static/images/configsettings.py.png)
 
-**config/urls.py** Two warnings, lines too long:
+**config/urls.py** Two warnings upon first entry, lines are too long:
 
 ![Screenshot](static/images/cofigurls.py.png)
 
-**foodtracker/admin.py**
+**foodtracker/admin.py** No warnings upon first entry 🎉:
+
+![Screenshot](static/images/foodtrackeradmin.py.png)
 
 **foodtracker/forms.py**
 
