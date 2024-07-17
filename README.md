@@ -240,6 +240,22 @@ In conclusion, this JavaScript validation testing has been a crucial learning ex
 
 ### Python Validation
 
+**config/settings.py**
+
+**config/urls.py**
+
+**foodtracker/admin.py**
+
+**foodtracker/forms.py**
+
+**foodtracker/models.py**
+
+**foodtracker/tests.py**
+
+**foodtracker/urls.py**
+
+**foodtracker/views.py**
+
 ### Python Validation Conclusion
 
 ## Technologies Used
