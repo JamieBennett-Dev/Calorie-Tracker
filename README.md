@@ -8,7 +8,7 @@
 
 ![Screenshot](static/images/ct-main.png)
 
-[Link to Calorie Tracker website](https://calorie-tracker505-bba2b7fbcdfa.herokuapp.com/)
+[Link to Calorie Tracker website](https://calorie-tracker505-bba2b7fbcdfa.herokuapp.com/) (Currently Inactive)
 
 ## Why choose our Calorie Tracker?
 
